@@ -44,7 +44,7 @@ function DiaryEntry() {
 
     <div>
         <p>
-            username: {globalData.user.username};
+           
         </p>
     </div>
   );
