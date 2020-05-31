@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
 import feathersjs from "@feathersjs/feathers";
 import Primus from "@feathersjs/primus-client";
 const socket = new Primus("http://localhost:3001");
