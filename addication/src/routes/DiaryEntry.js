@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react';
-import GlobalContext from "../context/GlobalContext";
+import {useHistory} from 'react-router-dom';
 
 //import './App.css';
 
@@ -12,7 +12,6 @@ function DiaryEntry() {
 
   });
 
-  const[globalData,setGlobalData] = useContext(GlobalContext);
 
   let history = useHistory();
 
@@ -26,8 +25,6 @@ function DiaryEntry() {
       alert("Vul je dagboek met wat meer woorden");
       return null; 
     }
-
-    setGlobalData({...globalData,user:fields});
 
     history.push("/profile");
   } 

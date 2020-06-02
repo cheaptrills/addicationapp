@@ -13,7 +13,7 @@ function Register() {
 
   });
 
-  const[globalData,setGlobalData] = useContext(GlobalContext);
+  //const[globalData,setGlobalData] = useContext(GlobalContext);
 
   let history = useHistory();
 
@@ -28,7 +28,7 @@ function Register() {
       return null; 
     }
 
-    setGlobalData({...globalData,user:fields});
+    //setGlobalData({...globalData,user:fields});
 
     history.push("/profile");
     //

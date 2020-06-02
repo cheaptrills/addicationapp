@@ -1,17 +1,15 @@
 import React, {useState, useContext} from 'react';
-import GlobalContext from "../context/GlobalContext";
+import {useGlobalState,useGlobalDispatch} from '../context/GlobalContext';
 
 //import './App.css';
 
 function Profile() {
-
-  const[globalData] = useContext(GlobalContext);
-
+  const { user } = useGlobalState();
   return (
 
     <div>
         <p>
-            username: {globalData.user.username};
+          {user.username}
         </p>
     </div>
   );

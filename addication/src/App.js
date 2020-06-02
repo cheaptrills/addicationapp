@@ -1,35 +1,39 @@
 import React from 'react';
 import logo from './logo.svg';
+import {Register,Profile} from './routes/index';
 import './css/App.css';
-import feathersjs from "@feathersjs/feathers";
-import Primus from "@feathersjs/primus-client";
-const socket = new Primus("http://localhost:3001");
-const f = feathersjs();
-f.configure(Primus(socket));
-//f.service("message").on("created",message => console.log(message));
-f.service("message").create({foo:"bar"});
-//import primus from "./primus";
-//let p = primus.connect("localhost:3001",{reconnect:{max:Infinity,min:500,retries:10}});
+import { BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+import {useGlobalState,useGlobalDispatch} from './context/GlobalContext';
 
 function App() {
+  let dispatch = useGlobalDispatch();
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Dit is React code
-        </p>
-        <a
-          className="App-link"
-          href="https://www.alphen.dev/addication"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Go to addication.com
-        </a>
-      </header>
-    </div>
+  return (    
+    <Router>
+      <div>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Register</Link>
+            </li>
+            <li>
+              <Link to="/profile">profile</Link>
+            </li>
+          </ul>
+        </nav>
+        <input type="text" onBlur={(d)=>{dispatch({type: "user", value: {username: d.target.value}})}} />
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route exact path="/">
+            <Register/>
+          </Route>
+          <Route path="/profile">
+            <Profile/>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
