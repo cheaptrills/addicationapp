@@ -48,23 +48,23 @@ function Register() {
   return (
     <div className="base-container">
       <header>
-       <img src="logo.svg" class="logo"> </img>
+       <img src="../SVG/logo.svg" class="logo"> </img>
        
       </header>
         <div className="header">Register</div>
         <div className="content">
           <div className="form" method="post">
             <div className="form__field">
-            <img src="profiel.svg" class="icon" id="profileicon">
+            <img src="../SVG/profiel.svg" class="icon" id="profileicon">
               </img>
               <input class="form-control" type="text" name="username" placeholder="username" onChange={event=>setField(event,"username")} />
             </div>
             <div className="form__field">
-            <img src="password.svg" class="icon" > </img>
+            <img src="../SVG/password.svg" class="icon" > </img>
               <input class="form-control" type="password" name="password" placeholder="password" onChange={event=>setField(event,"password")} />
             </div>
             <div class="form__field">
-                   <img src="password.svg" class="icon" > </img>
+                   <img src="../SVG/password.svg" class="icon" > </img>
                     <input type="password" class="form-control" name="passwordconfirmation" id="passwordconfirmation" placeholder="Wachtwoord confirmatie"/>
                 </div>
           </div>
