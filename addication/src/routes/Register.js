@@ -74,7 +74,7 @@ function Register() {
             
           
           </div>
-          <a class="link-account" href="login.html">Heb je al een account?</a>
+          <a class="link-account" href="login.js">Heb je al een account?</a>
 
       </div>
     );
