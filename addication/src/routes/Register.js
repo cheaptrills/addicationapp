@@ -3,6 +3,7 @@ import GlobalContext from "../context/GlobalContext";
 import {useHistory} from "react-router-dom";
 
 //import './App.css';
+//import './stylechloe.css';
 
 function Register() {
 
@@ -46,22 +47,35 @@ function Register() {
 
   return (
     <div className="base-container">
+      <header>
+       <img src="logo.svg" class="logo"> </img>
+       
+      </header>
         <div className="header">Register</div>
         <div className="content">
-          <div className="form">
-            <div className="form-group">
-              <label htmlFor="username">Username</label>
-              <input type="text" name="username" placeholder="username" onChange={event=>setField(event,"username")} />
+          <div className="form" method="post">
+            <div className="form__field">
+            <img src="profiel.svg" class="icon" id="profileicon">
+              </img>
+              <input class="form-control" type="text" name="username" placeholder="username" onChange={event=>setField(event,"username")} />
             </div>
-            <div className="form-group">
-              <label htmlFor="password">Password</label>
-              <input type="password" name="password" placeholder="password" onChange={event=>setField(event,"password")} />
+            <div className="form__field">
+            <img src="password.svg" class="icon" > </img>
+              <input class="form-control" type="password" name="password" placeholder="password" onChange={event=>setField(event,"password")} />
             </div>
+            <div class="form__field">
+                   <img src="password.svg" class="icon" > </img>
+                    <input type="password" class="form-control" name="passwordconfirmation" id="passwordconfirmation" placeholder="Wachtwoord confirmatie"/>
+                </div>
           </div>
         </div>
-          <button type="button" className="btn" onClick={handleSubmit} >
-            Register
-          </button>
+        <div class="form__field"> 
+          <input type="submit" value="maak account" className="btn" onClick={handleSubmit} />
+            
+          
+          </div>
+          <a class="link-account" href="login.html">Heb je al een account?</a>
+
       </div>
     );
 }
