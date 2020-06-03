@@ -4,24 +4,32 @@ import React from 'react';
 function Login() {
 
   return (
+    
     <div className="base-container">
         <div className="header">Login</div>
         <div className="content">
-          <div className="form">
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input type="text" name="email" placeholder="email" />
+          <div className="form" method="post">
+            <div className="form__field">
+            <img src="profiel.svg" class="icon" id="profileicon"> </img>
+            <input type="text" class="form-control" name="name" id="naam" placeholder="Gebruikersnaam"> </input>
+              
             </div>
-            <div className="form-group">
-              <label htmlFor="password">Password</label>
-              <input type="text" name="password" placeholder="password" />
+            <div className="form__field">
+            <img src="password.svg" class="icon" > </img>
+              <input type="password" class="form-control" name="password" id="password" placeholder="Wachtwoord"></input>
             </div>
+          
+        
+        <div class="form__field">
+					<input type="submit" value="maak account" class="btn"> </input>
           </div>
+				</div>
+        <a class="link-account" href="register.html">Heb je nog geen account?</a>
         </div>
-          <button type="button" className="btn">
-            Login
-          </button>
       </div>
+
+
+     
     );
 }
 
