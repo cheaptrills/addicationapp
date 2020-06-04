@@ -329,3 +329,92 @@ ul{
     width: 100px;
     margin-right: auto;
 }
+
+/*----- Medailles ------ */
+#medailleopdracht{
+    width:145px;
+    
+}
+
+h3{
+    color:#70BECE;
+   font-size: 65px;
+    font-family:'arial rounded MT' ; 
+}
+.medaille{
+    display: inline-flex;
+}
+#congrat{
+    color:#55D8DC;
+}
+
+/*----- hulp opdrachten ------- */
+
+.hulpbtn{
+    position: absolute;
+    z-index: 1;
+    margin-top: 160px;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    /* opacity: .8; */
+    color: white;
+    background-color: #70BECE;
+    font-size: 20px;
+    font-family: 'arial rounded MT';
+    padding-top: 19px;
+    padding-left: 35px;
+    margin-top: -90px;
+    /* margin-right: auto; */
+    margin-left: 125px;
+    text-decoration: none;
+}
+#hulp{
+    margin-top:-150px;
+    font-size:30px;
+}
+/*------ dagboek vulin ------ */
+#vulin{
+   margin-top:-150px;
+    font-size:30px; 
+    margin-left:85px;
+}
+textarea#textdagboek{
+    background-color: #EFF7F8;
+    color:#BEBEBC;
+    font-size:'Lato', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    
+}
+.ok{
+   
+    margin-top: 160px;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    /* opacity: .8; */
+    color: white;
+    background-color: #70BECE;
+    font-size: 20px;
+    font-family: 'arial rounded MT';
+    /* padding-top: 0px; */
+    /* padding-left: 0px; */
+    margin-top: 20px;
+    /* margin-right: auto; */
+    margin-left: 50px;
+    text-decoration: none;
+}
+div.inhouddagboek{
+   
+    margin-top: 210px;
+    margin-left: 50px;
+}
+
+.gebruik{
+    color:#70BECE;
+    font-size:15px;
+    font-family: 'Lato', sans-serif;
+}
