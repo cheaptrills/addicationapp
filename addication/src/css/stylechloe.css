@@ -418,3 +418,64 @@ div.inhouddagboek{
     font-size:15px;
     font-family: 'Lato', sans-serif;
 }
+/*---- moodslider ----- */
+.bracket{
+    width:30px;
+}
+.divmood{
+    display: inline-flex;
+    margin-top: 40px;
+   /* z-index: 1;*/
+}
+.mood{
+    width:150px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.moodslider{
+    margin-top: 50px;
+    margin-left:50px;
+}
+#happy{
+   /* z-index: 2;*/
+    margin-top: 30px;
+    margin-left: 45px;
+}
+#meh{
+    /*z-index: -1;*/
+   position: absolute;
+    margin-left: 53px;
+    margin-top: 30px;
+}
+#sad{
+   /* z-index: -2;*/
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+#left{
+   margin-left: -25px; 
+}
+#right{
+    margin-left: 45px;
+}
+.moodoke{
+    position: absolute;
+    z-index: 1;
+    margin-top: 160px;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    /* opacity: .8; */
+    color: white;
+    background-color: #70BECE;
+    font-size: 20px;
+    font-family: 'arial rounded MT';
+    padding-top: 19px;
+    padding-left: 70px;
+    margin-top: 62px;
+    /* margin-right: auto; */
+    margin-left: 40px;
+    text-decoration: none;
+}
