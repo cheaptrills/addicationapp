@@ -68,13 +68,15 @@ function DiaryEntry() {
      
       <h2 id="vulin"> Dag #</h2>
       <form>
-     <textarea id="textdagboek" name="tekstdagboek" rows="10" cols="30">
-        Vul het dagboek in
-</textarea>
+      <textarea id="titeldagboek" name="titeldagboek" placeholder="Titel" rows="1" cols="10">
+      </textarea>  
+      <br /> 
+     <textarea id="textdagboek" name="tekstdagboek" placeholder="Vul het dagboek in" rows="10" cols="30">
+      </textarea>
     <br/>
    
     <div class="gebruik"> 
-     <input type="radio" id="gebruikt" name="gebruikt" value="niet gebruikt"/> 
+     <input type="checkbox" id="gebruikt" name="gebruikt" value="niet gebruikt"/> 
           Ik heb vandaag niet gebruikt 
           </div>
          
