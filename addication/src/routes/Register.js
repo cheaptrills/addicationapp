@@ -2,8 +2,11 @@ import React, {useState, useContext} from 'react';
 import GlobalContext from "../context/GlobalContext";
 import {useHistory} from "react-router-dom";
 
+import logo from "../SVG/logo.svg";
+import password from "../SVG/password.svg";
+import gebruikersnaam from "../SVG/profiel.svg";
 //import './App.css';
-//import './stylechloe.css';
+//import '../stylechloe.css';
 
 function Register() {
 
@@ -46,37 +49,34 @@ function Register() {
   };
 
   return (
+  <div className="App">  
     <div className="base-container">
       <header>
-       <img src="../SVG/logo.svg" class="logo"> </img>
-       
+       <img src={logo} className="logo" /> 
       </header>
-        <div className="header">Register</div>
-        <div className="content">
-          <div className="form" method="post">
-            <div className="form__field">
-            <img src="../SVG/profiel.svg" class="icon" id="profileicon">
-              </img>
-              <input class="form-control" type="text" name="username" placeholder="username" onChange={event=>setField(event,"username")} />
-            </div>
-            <div className="form__field">
-            <img src="../SVG/password.svg" class="icon" > </img>
-              <input class="form-control" type="password" name="password" placeholder="password" onChange={event=>setField(event,"password")} />
-            </div>
-            <div class="form__field">
-                   <img src="../SVG/password.svg" class="icon" > </img>
-                    <input type="password" class="form-control" name="passwordconfirmation" id="passwordconfirmation" placeholder="Wachtwoord confirmatie"/>
-                </div>
+      <div className="header">Register</div>
+      <div className="content">
+        <div className="form" method="post">
+          <div className="form__field">
+            <img src={gebruikersnaam} className="icon" id="profileicon" />
+            <input className="form-control" type="text" name="username" placeholder="username" onChange={event=>setField(event,"username")} />
+          </div>
+          <div className="form__field">
+            <img src={password} className="icon" /> 
+            <input className="form-control" type="password" name="password" placeholder="password" onChange={event=>setField(event,"password")} />
+          </div>
+          <div className="form__field">
+            <img src={password} className="icon" />          
+            <input type="password" className="form-control" name="passwordconfirmation" id="passwordconfirmation" placeholder="Wachtwoord confirmatie"/>
           </div>
         </div>
-        <div class="form__field"> 
-          <input type="submit" value="maak account" className="btn" onClick={handleSubmit} />
-            
-          
-          </div>
-          <a class="link-account" href="login.js">Heb je al een account?</a>
-
       </div>
+      <div className="form__field"> 
+        <input type="submit" value="maak account" className="btn" onClick={handleSubmit} />
+      </div>
+      <a className="link-account" href="login.js">Heb je al een account?</a>
+    </div>
+  </div>  
     );
 }
 
