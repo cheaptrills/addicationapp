@@ -14,7 +14,7 @@ function Login() {
         <header>
           <img src={logosvg} class="logo"/> 
         </header>
-        <div className="header">Login</div>
+        
           <div className="content">
             <div className="form" method="post">
               <div className="form__field">
