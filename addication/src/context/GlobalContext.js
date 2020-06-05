@@ -13,7 +13,7 @@ function globalReducer(state, action) {
         case 'emergency': {
             return {...state, user: action.value};
         }
-        case '': {
+        case 'task': {
             return {...state, user: action.value};
         }
         default: {
