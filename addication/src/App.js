@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import {Register,Profile,Login} from './routes/index';
+import {Register,Profile,Login,Home} from './routes/index';
 import './css/App.css';
 import { BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 import {useGlobalState,useGlobalDispatch} from './context/GlobalContext';
@@ -20,6 +20,9 @@ function App() {
               <Link to="/profile">profile</Link>
             </li>
             <li>
+              <Link to="/home">home</Link>
+            </li>
+            <li>
               <Link to="/login">login</Link>
             </li>
           </ul>
@@ -34,8 +37,11 @@ function App() {
           <Route path="/profile">
             <Profile/>
           </Route>
-          <Route path="/login">
-            <Login/>
+          <Route path="/home">
+            <Home/>
+          </Route>
+            <Route path="/login">
+              <Login />
           </Route>
         </Switch>
       </div>
