@@ -1,0 +1,58 @@
+
+.nav {
+    position: absolute;
+    width: 389px;
+    height: 78px;
+    left: 18px;
+    top: 829px;
+    overflow: visible;
+}
+
+.dagboek {
+    position: absolute;
+    width: 36px;
+    height: 48px;
+    left: 227px;
+    top: 15px;
+    overflow: visible;
+}
+
+.home {
+    overflow: visible;
+    position: absolute;
+    width: 46.554px;
+    height: 44.249px;
+    left: 28.431px;
+    top: 14.748px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+
+.profiel {
+    overflow: visible;
+    position: absolute;
+    width: 44.249px;
+    height: 44.249px;
+    left: 309.946px;
+    top: 14.748px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.takenlijst {
+    position: absolute;
+    width: 41px;
+    height: 47px;
+    left: 129px;
+    top: 15px;
+    overflow: visible;
+}
+
+.navbox {
+    position: absolute;
+    overflow: visible;
+    width: 389px;
+    height: 78px;
+    left: 0px;
+    top: 0px;
+}
+
