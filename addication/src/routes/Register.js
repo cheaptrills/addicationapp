@@ -6,7 +6,7 @@ import logo from "../SVG/logo.svg";
 import password from "../SVG/password.svg";
 import gebruikersnaam from "../SVG/profiel.svg";
 //import './App.css';
-//import '../stylechloe.css';
+import '../css/stylechloe.css';
 
 function Register() {
 
