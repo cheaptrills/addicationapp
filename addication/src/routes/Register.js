@@ -54,7 +54,7 @@ function Register() {
       <header>
        <img src={logo} className="logo" /> 
       </header>
-      <div className="header">Register</div>
+      
       <div className="content">
         <div className="form" method="post">
           <div className="form__field">
