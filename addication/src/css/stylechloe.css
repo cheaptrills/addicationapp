@@ -479,3 +479,11 @@ div.inhouddagboek{
     margin-left: 40px;
     text-decoration: none;
 }
+/*------ lees dagboek -----*/
+.dag{
+     color: #0BA5B0;
+    font-family: 'arial rounded MT';
+    font-size:20px;
+    margin-left:0px;
+    margin-right:auto; 
+}
