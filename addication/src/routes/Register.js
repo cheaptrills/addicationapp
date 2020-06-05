@@ -1,40 +1,51 @@
-import React, {useState, useContext} from 'react';
-import GlobalContext from "../context/GlobalContext";
+import React, {useState} from 'react';
 import {useHistory} from "react-router-dom";
 
 import logo from "../SVG/logo.svg";
 import password from "../SVG/password.svg";
 import gebruikersnaam from "../SVG/profiel.svg";
-//import './App.css';
 import '../css/stylechloe.css';
+import {useUserDispatch} from "../context/UserContext";
 
 function Register() {
+
+  const dispatch = useUserDispatch();
 
   const [fields, setFields] = useState({
 
     username: null,
-    password: null
+    password: null,
+    confirmpassword: null
 
   });
 
-  //const[globalData,setGlobalData] = useContext(GlobalContext);
+  const [errorMessages,setErrorMessages]=useState([]);
 
   let history = useHistory();
 
   const handleSubmit = ()=> {
-    if(fields.username == null || fields.username.length < 2){
-      alert("username:" + fields.username);
-      return null; 
-    }
-    
-    if(fields.password == null || fields.password.length < 6){
-      alert("password");
-      return null; 
+
+    let errors = [];
+
+    if(fields.username == null || fields.username.length <= 3){
+      errors.push("username too short");
     }
 
-    //setGlobalData({...globalData,user:fields});
+    if(fields.password == null || fields.password.search(/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[^\w\s]).{6,}$/) === -1 ){
+      errors.push("password empty or not long/complex enough");
+    }
 
-    history.push("/profile");
+    if(fields.password !== fields.confirmpassword){
+      errors.push("passwords don't match");
+    }
+
+    if(errors.length === 0){
+      dispatch({type: "setUser", value: {username: fields.username}});
+      history.push("/home");
+    }else{
+      setErrorMessages(errors);
+    }
+
     //
     //TODO: roep post aan voor een register in de backend
     //
@@ -54,7 +65,9 @@ function Register() {
       <header>
        <img src={logo} className="logo" /> 
       </header>
-      
+      <ul>
+        {errorMessages.map(e => <li>{e}</li>)}
+      </ul>
       <div className="content">
         <div className="form" method="post">
           <div className="form__field">
@@ -67,7 +80,7 @@ function Register() {
           </div>
           <div className="form__field">
             <img src={password} className="icon" />          
-            <input type="password" className="form-control" name="passwordconfirmation" id="passwordconfirmation" placeholder="Wachtwoord confirmatie"/>
+            <input type="password" className="form-control" name="passwordconfirmation" id="passwordconfirmation" placeholder="Wachtwoord confirmatie" onChange={event=>setField(event,"confirmpassword")}/>
           </div>
         </div>
       </div>

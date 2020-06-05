@@ -4,13 +4,19 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {GlobalProvider} from './context/GlobalContext';
+import { UserProvider } from './context/UserContext';
+import { DiaryProvider } from './context/DiaryContext';
 
 ReactDOM.render(
-  <GlobalProvider>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-    </GlobalProvider>,
+    <DiaryProvider>
+      <UserProvider>
+        <GlobalProvider>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+        </GlobalProvider>
+      </UserProvider>
+    </DiaryProvider>,
   document.getElementById('root')
 );
 

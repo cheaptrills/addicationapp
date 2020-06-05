@@ -26,7 +26,7 @@ function Login() {
                 <input type="password" className="form-control" name="password" id="password" placeholder="Wachtwoord"></input>
               </div>
               <div class="form__field">
-                <input type="submit" value="maak account" class="btn"></input>
+                <input type="submit" value="Login" class="btn"></input>
               </div>
             </div>
             <a className="link-account" href="register.js">Heb je nog geen account?</a>

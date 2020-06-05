@@ -1,10 +1,10 @@
 import React, {useState, useContext} from 'react';
-import {useGlobalState,useGlobalDispatch} from '../context/GlobalContext';
+import {useUserState} from "../context/UserContext";
 
 //import './App.css';
 
 function Profile() {
-  const { user } = useGlobalState();
+  const {user} = useUserState();
   return (
 
     <div>
