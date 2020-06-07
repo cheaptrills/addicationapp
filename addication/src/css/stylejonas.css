@@ -1,0 +1,348 @@
+
+.nav {
+    position: absolute;
+    width: 389px;
+    height: 78px;
+    left: 18px;
+    top: 829px;
+    overflow: visible;
+}
+
+.dagboek {
+    position: absolute;
+    width: 36px;
+    height: 48px;
+    left: 227px;
+    top: 15px;
+    overflow: visible;
+}
+
+.home {
+    overflow: visible;
+    position: absolute;
+    width: 46.554px;
+    height: 44.249px;
+    left: 28.431px;
+    top: 14.748px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+
+.profiel {
+    overflow: visible;
+    position: absolute;
+    width: 44.249px;
+    height: 44.249px;
+    left: 309.946px;
+    top: 14.748px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.takenlijst {
+    position: absolute;
+    width: 41px;
+    height: 47px;
+    left: 129px;
+    top: 15px;
+    overflow: visible;
+}
+
+.navbox {
+    position: absolute;
+    overflow: visible;
+    width: 389px;
+    height: 78px;
+    left: 0px;
+    top: 0px;
+}
+
+
+@font-face { font-family: Arial Rounded MT; src: url('../font/unicode.arialr.ttf'); } 
+
+
+.mediaViewInfo {
+    --web-view-name: scale;
+    --web-view-id: scale;
+    --web-scale-to-fit: true;
+    --web-scale-to-fit-type: width;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+:root {
+    --web-view-ids: scale;
+}
+
+
+#scale {
+    position: absolute;
+    width: 425px;
+    height: 1239px;
+    background-color: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    --web-view-name: scale;
+    --web-view-id: scale;
+    --web-scale-to-fit: true;
+    --web-scale-to-fit-type: width;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+    font-family: Arial Rounded MT;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+
+
+
+#Group_32 {
+	position: absolute;
+	width: 132px;
+	height: 122px;
+	left: 147px;
+	top: 64px;
+	overflow: visible;
+}
+
+.Rectangle_9_bfm {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 349px;
+	height: 58px;
+	left: 0px;
+	top: 0px;
+}
+
+.Path_10_bfq {
+	overflow: visible;
+	position: absolute;
+	width: 66.531px;
+	height: 62.237px;
+	left: 179.41px;
+	top: 87.413px;
+	transform: matrix(1,0,0,1,0,0);
+}
+.arrow {
+	position: absolute;
+	width: 25px;
+	height: 41px;
+	left: 29px;
+	top: 36px;
+	overflow: visible;
+}
+
+
+.gradient {
+    position: absolute;
+    overflow: hidden;
+    width: 425.5px;
+    height: 1241px;
+    left: -0.5px;
+    top: 0px;
+   background-image: linear-gradient(#30aebb, #70bece);
+}
+
+.change_firstname{
+	position: absolute;
+	width: 351px;
+	height: 67px;
+	left: 37px;
+	top: 416px;
+	overflow: visible;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    background-color: white;
+border-radius: 20px;    
+     
+}
+
+
+.change_password {
+	position: absolute;
+	width: 351px;
+	height: 67px;
+	left: 37px;
+	top: 715px;
+	overflow: visible;
+     filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    background-color: white;
+border-radius: 20px;  
+}
+
+#input
+
+
+{
+	
+	position: absolute;
+	overflow: visible;
+	width: 250px;
+	height: 50px;
+	left: 10px;
+	top: 10px;
+ 
+    
+    
+}
+
+
+#button
+
+
+{
+	
+	position: absolute;
+	overflow: visible;
+	width: 250px;
+	height: 50px;
+	
+	top: 10px;
+    margin-left: 50px;
+    background-color: white;
+    text-transform: uppercase;
+    
+    
+}
+a
+
+{
+    color: white;
+}
+
+
+
+
+.icon
+
+{
+    margin-left: 290px;
+    margin-top: 15px;
+}
+
+
+input {
+  border: 1px solid white;
+  padding: 10px;
+  font-size: 1.2em;
+  width: 100%;
+ text-align: center;
+  color:   #30aebb;
+ 
+}
+
+.change_email {
+	position: absolute;
+	width: 351px;
+	height: 67px;
+	left: 37px;
+	top: 616px;
+	overflow: visible;
+     filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    background-color: white;
+border-radius: 20px;  
+}
+
+
+.changedrugs {
+	position: absolute;
+	width: 351px;
+	height: 67px;
+	left: 37px;
+	top: 814px;
+	overflow: visible;
+     filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    background-color: white;
+border-radius: 20px;  
+}
+
+   
+.change_lastname {
+	position: absolute;
+	width: 351px;
+	height: 67px;
+	left: 37px;
+	top: 516px;
+	overflow: visible;
+     filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    background-color: white;
+border-radius: 20px;  
+}
+
+
+
+.change_password {
+	position: absolute;
+	width: 351px;
+	height: 67px;
+	left: 37px;
+	top: 715px;
+	overflow: visible;
+}
+
+.resetvooruitgang {
+	position: absolute;
+	width: 351px;
+	height: 67px;
+	left: 37px;
+	top: 913px;
+	overflow: visible;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    background-color: white;
+border-radius: 20px;  
+}
+
+.uitloggen {
+	position: absolute;
+	width: 351px;
+	height: 67px;
+	left: 37px;
+	top: 1031px;
+	overflow: visible;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    background-color: white;
+border-radius: 20px; 
+}
+
+input:focus{
+    outline: none;
+}
+
+
+.level {
+	position: absolute;
+	width: 159px;
+	height: 57px;
+	left: 129px;
+	top: 235px;
+	overflow: visible;
+      filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    background-color: white;
+border-radius: 20px;
+}
+
+
+
+
+.removeaccount {
+	position: absolute;
+	left: 139px;
+	top: 1119px;
+	overflow: visible;
+	width: 149px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 15px;
+	color: rgba(255,255,255,1);
+	text-decoration: true;
+}
+
