@@ -2,8 +2,13 @@ import React from 'react';
 //import './App.css';
 import '../css/stylejonas.css';
 import '../css/stylechloe.css';
+import './scale.js';
+
 import pencilsvg from "../SVG/pencil.svg";
 import arrowsvg from "../SVG/arrow.svg";
+
+import level1 from "../SVG/level1.svg";
+import level2 from "../SVG/level2.svg";
 
 import level3 from "../SVG/level3.svg";
 import level4 from "../SVG/level4.svg";
@@ -55,6 +60,8 @@ function settings() {
 	<div className="rect">
 		
 	</div>
+
+    <img className="arrow" src={arrowsvg} ></img>
 
 	<svg className="Path_10_bfq" viewBox="0 0 66.531 62.237">
 		<linearGradient id="Path_10_bfq" spreadMethod="pad" x1="0.5" x2="0.5" y1="1.004" y2="0.004">

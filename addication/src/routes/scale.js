@@ -18,7 +18,6 @@ var Application = function() {
 	this.APPLICATION_COMPLETE = "applicationComplete";
 	this.APPLICATION_RESIZE = "applicationResize";
 	this.SIZE_STATE_NAME = "data-is-view-scaled";
-
 	this.lastView = null;
 	this.lastState = null;
 	this.lastOverlay = null;
@@ -32,7 +31,8 @@ var Application = function() {
 	this.viewScaleSliderId = "ViewScaleSliderInput";
 	this.pageRefreshedName = "showPageRefreshedNotification";
 	this.prefix = "--web-";
-	this.applicationStylesheet = null;
+	this.applicationStylesheet = "settings.js" ;
+	this.applicationStylesheet = "achievements.js" ;
 	this.mediaQueryDictionary = {};
 	this.viewsDictionary = {};
 	this.addedViews = [];
@@ -86,7 +86,7 @@ var Application = function() {
 		if (view==null) view = self.getInitialView();
 		self.collectViews();
 		self.collectOverlays();
-		self.collectMediaQueries();
+		//self.collectMediaQueries();
 		self.setViewOptions(view);
 		self.setViewVariables(view);
 
@@ -1716,11 +1716,11 @@ var Application = function() {
 		return viewId;
 	}
 
-	self.getApplicationStylesheet = function() {
-		var stylesheetId = self.getViewPreferenceValue(document.body, self.prefix + "stylesheet-id");
-		self.applicationStylesheet = document.getElementById("applicationStylesheet");
-		return self.applicationStylesheet.sheet;
-	}
+	//self.getApplicationStylesheet = function() {
+	//	var stylesheetId = self.getViewPreferenceValue(document.body, self.prefix + "stylesheet-id");
+	//	self.applicationStylesheet = document.getElementById("applicationStylesheet");
+	//	return self.applicationStylesheet.sheet;
+	//}
 
 	self.getVisibleView = function() {
 		var viewIds = self.getViewIds();
@@ -1933,10 +1933,10 @@ var Application = function() {
 		self.overlayIds = ids;
 	}
 
-	self.collectMediaQueries = function() {
+	 /*self.collectMediaQueries = function() {
 		var viewIds = self.getViewIds();
-		var styleSheet = self.getApplicationStylesheet();
-		var cssRules = self.getStylesheetRules(styleSheet);
+		//var styleSheet = self.getApplicationStylesheet();
+		//var cssRules = self.getStylesheetRules(styleSheet);
 		var numOfCSSRules = cssRules ? cssRules.length : 0;
 		var cssRule;
 		var id = viewIds.length ? viewIds[0]: ""; // single view
@@ -2082,7 +2082,7 @@ var Application = function() {
 		}
 		else {
 			var stateEvent = new Event(self.STATE_NOT_FOUND);
-			self.stateName = name;
+			//self.stateName = name;
 			window.dispatchEvent(stateEvent);
 		}
 
