@@ -1,6 +1,10 @@
 import React from 'react';
 //import './App.css';
-//import './chloestyle.css';
+import '../css/chloestyle.css';
+
+import level1 from "../SVG/level1.svg";
+import backbutton from "../SVG/back-button.svg";
+
 function Opdrachtkeuze() {
 
   return (
@@ -8,18 +12,18 @@ function Opdrachtkeuze() {
       <header>
         <div class="start"> 
           <a href="dashboard.html"> 
-            <img src="SVG/back-button.svg" alt="terugknop" class="terugknop"/>
+            <img src={backbutton} alt="terugknop" class="terugknop"/>
           </a> 
         </div>
-        <br>
+        <br />
         <div class="currentlevel">
-          <img src="SVG/level1.svg" class="level"/>
+          <img src={level1} class="level"/>
           <img src="SVG/level-balk.svg" class="levelbalk"/>
           <img src="SVG/level-aanduiding.svg" class="levelaanduid"/>
           <img src="SVG/level-aanduiding.svg" class="levelaanduid1"/>
         </div>
       </header>
-      
+
       <div class="maindash"> 
         <a href="opdracht-uitleg.html">
           <button class="dash" id="opdrachten"> 
@@ -41,5 +45,4 @@ function Opdrachtkeuze() {
     </div>
     );
 }
-
 export default Opdrachtkeuze;
