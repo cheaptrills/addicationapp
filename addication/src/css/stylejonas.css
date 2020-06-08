@@ -332,3 +332,209 @@ border-radius: 20px;
 	text-decoration: true;
 }
 
+
+
+.level {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 150px;
+	height: 150px;
+	left: 42px;
+	top: 238px;
+   background-color: white;
+    border-radius: 25px
+}
+
+
+.level input 
+
+
+{
+  	width: 150px;
+	height: 150px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+
+ .dagboek input
+
+
+{
+  	width: 150px;
+	height: 150px;
+    border-radius: 25px; 
+    margin-top: -19px;
+    background-color: white;
+}
+.arrow {
+	position: absolute;
+	width: 28px;
+	height: 48px;
+	left: 33px;
+	top: 41px;
+	overflow: visible;
+}
+#Level {
+	position: absolute;
+	left: 23px;
+	top: 249px;
+	overflow: visible;
+	width: 183px;
+	height: 53px;
+	text-align: center;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(48,174,187,1);
+}
+.award {
+	position: absolute;
+	width: 76px;
+	height: 76px;
+	left: 76px;
+	top: 295px;
+	overflow: visible;
+}
+.mood {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 150px;
+	height: 150px;
+	left: 231px;
+	top: 238px;
+     background-color: white;
+    border-radius: 25px
+	
+}
+#Mood {
+	position: absolute;
+	left: 212px;
+	top: 249px;
+	overflow: visible;
+	width: 183px;
+	height: 53px;
+	text-align: center;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(48,174,187,1);
+}
+
+
+.mood input
+
+{
+    width: 150px;
+	height: 150px;
+    border-radius: 25px; 
+    background-color: white;
+}
+#happy1 {
+	position: absolute;
+	width: 79px;
+	height: 80px;
+	left: 264px;
+	top: 291px;
+	overflow: visible;
+}
+.dagboek {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 150px;
+	height: 150px;
+    	left: 42px;
+	top: 405px;
+
+background-color: white;
+    border-radius: 25px
+    
+
+	
+}
+
+
+#Dagboek {
+	position: absolute;
+	left: 23px;
+	top: 416px;
+	overflow: visible;
+	width: 183px;
+	height: 53px;
+	text-align: center;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(48,174,187,1);
+}
+#dagboek {
+	position: absolute;
+	width: 64px;
+	height: 73px;
+	left: 77px;
+	top: 460px;
+	overflow: visible;
+}
+
+
+
+.gestopt {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+    width: 150px;
+	height: 150px;
+background-color: white;
+    border-radius: 25px;
+	
+	left: 231px;
+	top: 405px;
+	
+}
+
+
+
+
+.gestopt input
+
+
+{
+   width: 150px;
+	height: 150px;
+    border-radius: 25px; 
+    background-color: white;
+}
+
+
+
+#Gestopt {
+	position: absolute;
+	left: 212px;
+	top: 416px;
+	overflow: visible;
+	width: 183px;
+	height: 53px;
+	text-align: center;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(48,174,187,1);
+}
+
+
+#hand1 {
+	position: absolute;
+	width: 58px;
+	height: 72px;
+	left: 275px;
+	top: 454px;
+	overflow: visible;
+}
+
