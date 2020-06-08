@@ -24,6 +24,14 @@ function App() {
             </li>
             <li>
               <Link to="/login">login</Link>
+
+
+            </li>
+
+            <li>
+              <Link to="../routes/settings">settings</Link>
+
+              
             </li>
           </ul>
         </nav>

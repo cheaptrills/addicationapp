@@ -102,34 +102,20 @@
 
 
 
-#Group_32 {
+.rect {
 	position: absolute;
 	width: 132px;
 	height: 122px;
 	left: 147px;
 	top: 64px;
-	overflow: visible;
+    overflow: visible;
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    background-color: white;
+     border-radius: 20px;  
 }
 
-.Rectangle_9_bfm {
-	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-	position: absolute;
-	overflow: visible;
-	width: 349px;
-	height: 58px;
-	left: 0px;
-	top: 0px;
-}
 
-.Path_10_bfq {
-	overflow: visible;
-	position: absolute;
-	width: 66.531px;
-	height: 62.237px;
-	left: 179.41px;
-	top: 87.413px;
-	transform: matrix(1,0,0,1,0,0);
-}
+
 .arrow {
 	position: absolute;
 	width: 25px;

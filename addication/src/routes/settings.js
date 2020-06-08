@@ -1,35 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>profiel</title>
-<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="css/profiel.css"/>
-<script id="applicationScript" type="text/javascript" src="js/scale.js"></script>
-</head>
-<body>
-<div id="scale" class="gradient">
+import React from 'react';
+//import './App.css';
+import '../css/stylejonas.css';
+import pencilsvg from "../SVG/pencil.svg";
+import arrowsvg from "../SVG/arrow.svg";
+
+
+
+function settings() {
+
+  return (
+
+    <div id="scale" className="gradient">
    
    
    
     
-	<div class="level">
+	<div className="level">
 	
 	
 	</div>
 
-    
-    <a href="#"><img class="arrow" src="img/arrow.svg" ></a>
+    <div>
+    <a href="#"><img className="arrow" src={arrowsvg} ></img> </a> </div>
 
-	<div id="Group_32">
-		<svg class="Rectangle_9">
-			<rect fill="rgba(255,255,255,0.902)" id="Rectangle_9" rx="22" ry="22" x="0" y="0" width="132" height="122">
-			</rect>
-		</svg>
+	<div className="rect">
+		
 	</div>
 
-	<svg class="Path_10_bfq" viewBox="0 0 66.531 62.237">
+	<svg className="Path_10_bfq" viewBox="0 0 66.531 62.237">
 		<linearGradient id="Path_10_bfq" spreadMethod="pad" x1="0.5" x2="0.5" y1="1.004" y2="0.004">
 			<stop offset="0" stop-color="#0ba5b0" stop-opacity="1"></stop>
 			<stop offset="0.9836" stop-color="#6fbecd" stop-opacity="1"></stop>
@@ -41,46 +39,46 @@
 
 
 	
-	  <div class="change_firstname">
+	  <div className="change_firstname">
              
             <input type="text"  name="change_firstname" id="input" placeholder="Jan"/>
-            <img src="img/pencil.svg" class="icon" />    
+            <img src={pencilsvg} class="icon" />    
           </div>
           
           
           
-	  <div class="change_lastname">
+	  <div className="change_lastname">
              
             <input type="text"  name="change_lastname" id="input" placeholder="jansens"/>
-            <img src="img/pencil.svg" class="icon" />    
+            <img src={pencilsvg}  class="icon" />    
           </div>
 
 	      
-	  <div class="change_email">
+	  <div className="change_email">
              
             <input type="text"  name="change_email" id="input" placeholder="janjansen@hotmail.com"/>
-            <img src="img/pencil.svg" class="icon" />    
+            <img src={pencilsvg}  class="icon" />    
           </div>
           
-            <div class="change_password">
+            <div className="change_password">
              
             <input type="password"  name="change_password" id="input" placeholder="password"/>
-            <img src="img/pencil.svg" class="icon" />    
+            <img src={pencilsvg}  class="icon" />    
           </div>
           
           
-          <div class="changedrugs"> 
+          <div className="changedrugs"> 
         <input type="button" value="Verander van drugs" id="button" onClick="" />
       </div>
       
       
         
-          <div class="resetvooruitgang"> 
+          <div className="resetvooruitgang"> 
         <input type="button" value="reset je vooruitgang" id="button" onClick="" />
       </div>
       
         
-          <div class="uitloggen"> 
+          <div className="uitloggen"> 
         <input type="button" value="uitloggen" id="button" onClick="" />
       </div>
       
@@ -89,9 +87,13 @@
 	
 
 
-	<div class="removeaccount">
+	<div className="removeaccount">
 		<a href="#">verwijder je account</a>
 	</div>
-</div>
-</body>
-</html>
+
+    </div>
+
+  );
+}
+
+export default settings;
