@@ -33,29 +33,12 @@ function achievements() {
 
 
 
-<header>
-          <div class="levelsheader"> 
-              <img src={level2} class="lev"/> 
-              <img src={level3} class="lev"/>
-              <img src={level4} class="lev"/>
-              <img src={level5} class="lev"/>
-              <img src={level6} class="lev"/>
-              <img src={level7} class="lev"/>
-              <img src={level8} class="lev"/>
-          </div>
-          <br />
-          <div class="currentlevel">
-            <img src={level1} class="level"/>
-            <img src={levelbalk} class="levelbalk"/>
-            <img src={levelaanduiding} class="levelaanduid"/>
-            <img src={levelaanduiding} class="levelaanduid1"/>
-          </div>
-        </header>
+
    
    <a href="#"><img class="arrow" src={arrow}></img></a>
 	<div class="level">
 
-	 <input type="button" value="" id="button" onClick="" />    
+	 <input type="button" value=""  onClick="" />    
 	    
 	    
 	    
@@ -69,7 +52,7 @@ function achievements() {
 	
 		<div class="mood">
 	
-	 <input type="button" value="" id="button" onClick="" />   
+	 <input type="button" value="" onClick="" />   
 		
 	</div>
 	
@@ -85,7 +68,7 @@ function achievements() {
 	
 	<div class="dagboek">``
 	
-	 <input type="button" value="" id="button" onClick="" />   
+	 <input type="button" value=""  onClick="" />   
 
 
 		
@@ -102,7 +85,7 @@ function achievements() {
 	
 		<div class="gestopt">
 		
-		 <input type="button" value="" id="button" onClick="" />   
+		 <input type="button" value="" onClick="" />   
 
 	</div >
 	

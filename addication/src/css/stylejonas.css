@@ -196,6 +196,12 @@ border-radius: 20px;
     
     
 }
+
+
+
+
+
+
 a
 
 {
@@ -330,6 +336,15 @@ border-radius: 20px;
 	font-size: 15px;
 	color: rgba(255,255,255,1);
 	text-decoration: true;
+}
+
+.rect img
+
+{
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+    margin-top:12px;
 }
 
 
