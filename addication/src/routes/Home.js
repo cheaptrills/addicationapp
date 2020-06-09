@@ -6,7 +6,7 @@ import diaryicon from "../SVG/diary-icon.svg";
 import noodknopicon from "../SVG/noodknop-icon.svg";
 import achievementicon from "../SVG/achievement-icon.svg";
 import Level from  '../components/Level';
-
+import Register from '../components/navigator';
 function Home() {
 
   return (
@@ -48,6 +48,7 @@ function Home() {
           </button>
         </a>
       </div>
+      <Register />
     </div>
     );
 }
