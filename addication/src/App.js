@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import {Register,Profile,Login,Home} from './routes/index';
-import './css/App.css';
-import { BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+import Launches from  './components/Launches';
+import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
 import {useGlobalState,useGlobalDispatch} from './context/GlobalContext';
 
 function App() {
@@ -44,8 +44,10 @@ function App() {
               <Login />
           </Route>
         </Switch>
+        <Launches />
       </div>
     </Router>
+    
   );
 }
 

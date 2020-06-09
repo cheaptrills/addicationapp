@@ -7,7 +7,15 @@ import {GlobalProvider} from './context/GlobalContext';
 import { UserProvider } from './context/UserContext';
 import { DiaryProvider } from './context/DiaryContext';
 
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from 'react-apollo';
+
+const client = new ApolloClient({
+  uri: '/graphql',
+});
+
 ReactDOM.render(
+  <ApolloProvider client={client}>
     <DiaryProvider>
       <UserProvider>
         <GlobalProvider>
@@ -16,7 +24,8 @@ ReactDOM.render(
         </React.StrictMode>
         </GlobalProvider>
       </UserProvider>
-    </DiaryProvider>,
+    </DiaryProvider>
+  </ApolloProvider>,
   document.getElementById('root')
 );
 
