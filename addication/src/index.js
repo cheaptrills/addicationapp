@@ -8,21 +8,14 @@ import { UserProvider } from './context/UserContext';
 import { DiaryProvider } from './context/DiaryContext';
 
 import ApolloClient from 'apollo-boost';
-import { gql } from "apollo-boost";
+import { ApolloProvider } from 'react-apollo';
 
 const client = new ApolloClient({
-  uri: 'https://48p1r2roz4.sse.codesandbox.io',
+  uri: '/graphql',
 });
 
-client.query({
-    query: gql`{
-        rates(currency: "USD"){
-          currency
-        }
-      }`
-  }).then(result => console.log(result));
-
 ReactDOM.render(
+  <ApolloProvider client={client}>
     <DiaryProvider>
       <UserProvider>
         <GlobalProvider>
@@ -31,7 +24,8 @@ ReactDOM.render(
         </React.StrictMode>
         </GlobalProvider>
       </UserProvider>
-    </DiaryProvider>,
+    </DiaryProvider>
+  </ApolloProvider>,
   document.getElementById('root')
 );
 
