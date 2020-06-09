@@ -16,7 +16,7 @@ const client = new ApolloClient({
 
 client.query({
     query: gql`{
-        rates(currency: "USD") {
+        rates(currency: "USD"){
           currency
         }
       }`
