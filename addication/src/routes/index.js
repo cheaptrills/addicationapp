@@ -4,6 +4,6 @@ import Diary from './Diary';
 import Home from './Home';
 import Profile from './Profile';
 import DiaryEntry from './DiaryEntry';
-import Launches from '../components/Launches';
+import Opdrachtkeuze from './Opdracht-keuze';
 
-export {Register,Login,DiaryEntry,Diary,Home,Profile,Launches};
+export {Register,Login,DiaryEntry,Diary,Home,Profile,Opdrachtkeuze};
