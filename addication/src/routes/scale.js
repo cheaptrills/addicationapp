@@ -33,6 +33,10 @@ var Application = function() {
 	this.prefix = "--web-";
 	this.applicationStylesheet = "settings.js" ;
 	this.applicationStylesheet = "achievements.js" ;
+	this.applicationStylesheet = "Register.js" ;
+	this.applicationStylesheet = "Home.js" ;
+	this.applicationStylesheet = "Diary.js" ;
+
 	this.mediaQueryDictionary = {};
 	this.viewsDictionary = {};
 	this.addedViews = [];

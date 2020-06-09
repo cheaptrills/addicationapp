@@ -15,10 +15,15 @@ import opdrachtenicon from "../SVG/opdrachten-icon.svg";
 import diaryicon from "../SVG/diary-icon.svg";
 import noodknopicon from "../SVG/noodknop-icon.svg";
 import achievementicon from "../SVG/achievement-icon.svg";
+import '../css/stylejonas.css';
+import '../css/stylechloe.css';
+import './scale.js';
 
 function Home() {
 
   return (
+
+    <div id="scale" className="gradient">
     <div className="base-container">
         <header>
           <div class="levelsheader"> 
@@ -76,6 +81,7 @@ function Home() {
          </a>
  
    </div>
+      </div>
       </div>
     );
 }
