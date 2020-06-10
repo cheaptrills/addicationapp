@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import {Register,Profile,Login,Home,Opdrachtkeuze} from './routes/index';
+
+import {Register,Profile,Login,Home,Opdrachtkeuze,DiaryEntry} from './routes/index';
 import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
 import {useGlobalState,useGlobalDispatch} from './context/GlobalContext';
 
@@ -27,6 +28,9 @@ function App() {
             <li>
               <Link to="/opdrachtkeuze">opdracht</Link>
             </li>
+            <li>
+              <Link to="/diaryentry">diaryentry</Link>
+            </li>
           </ul>
         </nav>
         <input type="text" onBlur={(d)=>{dispatch({type: "user", value: {username: d.target.value}})}} />
@@ -47,6 +51,9 @@ function App() {
           </Route>
           <Route path="/opdrachtkeuze">
             <Opdrachtkeuze />
+          </Route>
+          <Route path="/diaryentry">
+            <DiaryEntry/>
           </Route>
         </Switch>
       </div>
