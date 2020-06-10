@@ -3,6 +3,7 @@ import React from 'react';
 //import './chloestyle';
 import CurrentLevel from "../components/CurrentLevel";
 import backbutton from "../SVG/back-button.svg";
+import hulp from "../SVG/hulp-icon.svg";
 
 function DiaryMenu() {
 
@@ -44,7 +45,7 @@ function DiaryMenu() {
         <a href="dagboek-hulp.html"> 
           <button class="dash" id="noodknop"> 
             <div class="inhoud">
-              <img src="SVG/hulp-icon.svg" alt="hulp" class="hulpicon"/>
+              <img src={hulp} alt="hulp" class="hulpicon"/>
               <p> HULP</p>
             </div>
           </button>
