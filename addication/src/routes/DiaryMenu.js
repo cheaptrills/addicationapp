@@ -16,12 +16,9 @@ function DiaryMenu() {
           <p class="title"> DAGBOEK </p>
         </div>
         <br/>
-        <div class="currentlevel">
-          <img src="SVG/level1.svg" class="level"/>
-          <img src="SVG/level-balk.svg" class="levelbalk"/>
-          <img src="SVG/level-aanduiding.svg" class="levelaanduid"/>
-          <img src="SVG/level-aanduiding.svg" class="levelaanduid1"/> 
-        </div>
+    
+        <CurrentLevel />
+        
       </header>
       <div class="maindash"> 
         <a href="dagboek-vulin.html">

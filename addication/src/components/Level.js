@@ -25,12 +25,7 @@ export class Level extends Component{
                     <img src={level8} class="lev"/>
                 </div>
                 <br />
-                <div class="currentlevel">
-                    <img src={level1} class="level"/>
-                    <img src={levelbalk} class="levelbalk"/>
-                    <img src={levelaanduiding} class="levelaanduid"/>
-                    <img src={levelaanduiding} class="levelaanduid1"/>
-                </div>
+                <CurrentLevel />
             </div>
         )
     }
