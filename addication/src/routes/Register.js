@@ -15,7 +15,8 @@ function Register() {
 
     username: null,
     password: null,
-    confirmpassword: null
+    confirmpassword: null,
+    drug: null, 
 
   });
 
@@ -40,7 +41,7 @@ function Register() {
     }
 
     if(errors.length === 0){
-      dispatch({type: "setUser", value: {username: fields.username}});
+      dispatch({type: "signup", value: {username: fields.username,password: fields.password, drug: fields.drug}});
       history.push("/home");
     }else{
       setErrorMessages(errors);
@@ -81,6 +82,13 @@ function Register() {
           <div className="form__field">
             <img src={password} className="icon" />          
             <input type="password" className="form-control" name="passwordconfirmation" id="passwordconfirmation" placeholder="Wachtwoord confirmatie" onChange={event=>setField(event,"confirmpassword")}/>
+          </div>
+          <div className="form__field">
+            <select onChange={event=>setField(event,"drug")}>           
+              <option value="1">wiet</option>
+              <option value="2">alcohol</option>
+              <option value="3">cokaine</option>
+            </select>
           </div>
         </div>
       </div>
