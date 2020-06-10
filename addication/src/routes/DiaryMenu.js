@@ -1,6 +1,7 @@
 import React from 'react';
 //import './App.css';
 //import './chloestyle';
+import backbutton from "../SVG/back-button.svg";
 
 function DiaryMenu() {
 
@@ -10,7 +11,7 @@ function DiaryMenu() {
       <header>
         <div class="start"> 
           <a href="dashboard.html"> 
-            <img src="SVG/back-button.svg" alt="terugknop" class="terugknop"/>
+            <img src={backbutton} alt="terugknop" class="terugknop"/>
           </a>
           <p class="title"> DAGBOEK </p>
         </div>
