@@ -1,5 +1,7 @@
 import React, {useState, useContext} from 'react';
 import {useHistory} from 'react-router-dom';
+import CurrentLevel from '../components/CurrentLevel';
+import backbutton from "../SVG/back-button.svg";
 
 //import './App.css';
 //import './chloestyle.css';
@@ -44,18 +46,12 @@ function DiaryEntry() {
         <header>
     <div class="start"> 
        <a href="dashboard.html"> 
-        <img src="SVG/back-button.svg" alt="terugknop" class="terugknop"/>
+        <img src={backbutton} alt="terugknop" class="terugknop"/>
         </a>
     </div>
     
      <br/>
-      <div class="currentlevel">
-      <img src="SVG/level1.svg" class="level"/>
-       <img src="SVG/level-balk.svg" class="levelbalk"/>
-       <img src="SVG/level-aanduiding.svg" class="levelaanduid"/>
-       <img src="SVG/level-aanduiding.svg" class="levelaanduid1"/>
-       
-       </div>
+      <CurrentLevel />
    </header>
       
       
