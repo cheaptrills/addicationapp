@@ -6,7 +6,7 @@ import password from "../SVG/password.svg";
 import gebruikersnaam from "../SVG/profiel.svg";
 import '../css/stylejonas.css';
 import '../css/stylechloe.css';
-import './scale.js';
+//import './scale.js';
 import {useUserDispatch} from "../context/UserContext";
 
 function Register() {

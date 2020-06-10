@@ -2,6 +2,7 @@ import React from 'react';
 //import './App.css';
 import '../css/stylejonas.css';
 import '../css/stylechloe.css';
+import './scale.js';
 
 
 import award from "../SVG/award.svg";
@@ -19,17 +20,20 @@ import level7 from "../SVG/level7.svg";
 import level8 from "../SVG/level8.svg";
 import levelbalk from "../SVG/level-balk.svg";
 import levelaanduiding from "../SVG/level-aanduiding.svg";
+import Level from  '../components/Level';
 
 
 
 
 
-
-function achievements() {
+function Achievements() {
 
   return (
 
     <div id="scale" className="gradient">
+
+
+<Level />
 
 
 
@@ -66,7 +70,7 @@ function achievements() {
 	
 		
 	
-	<div class="dagboek">``
+	<div class="dagboek2">``
 	
 	 <input type="button" value=""  onClick="" />   
 
@@ -99,7 +103,7 @@ function achievements() {
 	
 	
 	
-	
+
 
 	
    
@@ -111,4 +115,4 @@ function achievements() {
   );
 }
 
-export default achievements;
+export default Achievements;

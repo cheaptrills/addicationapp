@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
-import {Register,Profile,Login,Home,Settings,Achievements} from './routes/index';
+import {Register,Profile,Login,Home,Settings,Achievements,AchievementsLevel} from './routes/index';
 import './css/App.css';
 import { BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
-import {Register,Profile,Login,Home} from './routes/index';
+//import {Register,Profile,Login,Home} from './routes/index';
 import Launches from  './components/Launches';
 //import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
 import {useGlobalState,useGlobalDispatch} from './context/GlobalContext';
@@ -43,6 +43,14 @@ function App() {
               
             </li>
 
+            <li>
+              <Link to="/achievementsLevel">AchievementsLevel</Link>
+
+              
+            </li>
+
+         
+
 
 
           </ul>
@@ -71,6 +79,12 @@ function App() {
           <Route path="/achievements">
               <Achievements />
           </Route>
+
+          <Route path="/achievementsLevel">
+              <     AchievementsLevel />
+          </Route>
+
+     
         </Switch>
         <Launches />
       </div>

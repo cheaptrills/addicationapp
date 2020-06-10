@@ -36,6 +36,8 @@ var Application = function() {
 	this.applicationStylesheet = "Register.js" ;
 	this.applicationStylesheet = "Home.js" ;
 	this.applicationStylesheet = "Diary.js" ;
+	this.applicationStylesheet = "achievements-level.js" ;
+
 
 	this.mediaQueryDictionary = {};
 	this.viewsDictionary = {};

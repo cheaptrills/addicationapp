@@ -1,10 +1,13 @@
 
+@font-face { font-family: Arial Rounded MT; src: url('../font/unicode.arialr.ttf'); } 
+
 .nav {
     position: absolute;
     width: 389px;
     height: 78px;
     left: 18px;
-    top: 829px;
+    
+    bottom: 35px;
     overflow: visible;
 }
 
@@ -57,7 +60,7 @@
 }
 
 
-@font-face { font-family: Arial Rounded MT; src: url('../font/unicode.arialr.ttf'); } 
+
 
 
 .mediaViewInfo {
@@ -77,7 +80,7 @@
 #scale {
     position: absolute;
     width: 425px;
-    height: 1239px;
+    height:920.689px;
     background-color: rgba(255, 255, 255, 1);
     overflow: hidden;
     --web-view-name: scale;
@@ -373,7 +376,7 @@ border-radius: 20px;
 }
 
 
- .dagboek input
+ .dagboek2 input
 
 
 {
@@ -457,7 +460,7 @@ border-radius: 20px;
 	top: 291px;
 	overflow: visible;
 }
-.dagboek {
+.dagboek2 {
 	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
 	position: absolute;
 	overflow: visible;
@@ -550,6 +553,160 @@ background-color: white;
 	height: 72px;
 	left: 275px;
 	top: 454px;
+	overflow: visible;
+}
+
+
+#Group_21 {
+	position: absolute;
+	width: 341px;
+	height: 114px;
+	left: 42px;
+	top: 493px;
+	overflow: visible;
+}
+.opdracht1 {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 341px;
+	height: 114px;
+	left: 0px;
+	top: 0px;
+    background-color: rgba(85,216,220,0.608);
+    border-radius: 22px;
+    
+    
+}
+#Wandeling_maken {
+	position: absolute;
+	left: 39px;
+	top: 42px;
+	overflow: visible;
+	width: 265px;
+	height: 46px;
+	text-align: center;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(236,236,235,1);
+}
+
+
+
+#Group_25 {
+	position: absolute;
+	width: 341px;
+	height: 115px;
+	left: 42px;
+	top: 633px;
+	overflow: visible;
+}
+#Group_17 {
+	position: absolute;
+	width: 341px;
+	height: 115px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+.opdracht2 {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 341px;
+	height: 115px;
+	left: 0px;
+	top: 0px;
+    background-color: rgba(85,216,220,0.608);
+    border-radius: 22px;
+    
+
+}
+#RUIM_KAMER_OP {
+	position: absolute;
+	left: 39px;
+	top: 42px;
+	overflow: visible;
+	width: 265px;
+	height: 46px;
+	text-align: center;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(236,236,235,1);
+}
+#Moeilijkheid___ {
+	position: absolute;
+	left: 19px;
+	top: 14px;
+	overflow: visible;
+	width: 139px;
+	height: 31px;
+	text-align: center;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(16,166,177,1);
+}
+#Group_24 {
+	position: absolute;
+	width: 138px;
+	height: 31px;
+	left: 61px;
+	top: 509px;
+	overflow: visible;
+}
+#Moeilijkheid____ {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 139px;
+	height: 31px;
+	text-align: center;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(16,166,177,1);
+}
+.levelbox {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 341px;
+	height: 229px;
+	left: 42px;
+	top: 238px;
+    background-color: rgba(255,255,255,0.902);
+    border-radius: 22px;
+    
+}
+
+#Level_1 {
+	position: absolute;
+	left: 81px;
+	top: 255px;
+	overflow: visible;
+	width: 274px;
+	height: 80px;
+	text-align: center;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	color: rgba(48,174,187,1);
+}
+#award {
+	position: absolute;
+	width: 114px;
+	height: 113px;
+	left: 156px;
+	top: 323px;
 	overflow: visible;
 }
 

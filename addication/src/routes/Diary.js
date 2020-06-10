@@ -1,7 +1,7 @@
 import React, {useState, useContext} from 'react';
 import '../css/stylejonas.css';
 import '../css/stylechloe.css';
-import './scale.js';
+//import './scale.js';
 
 //import './App.css';
 

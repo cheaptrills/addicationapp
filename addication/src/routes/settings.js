@@ -19,6 +19,8 @@ import level8 from "../SVG/level8.svg";
 import levelbalk from "../SVG/level-balk.svg";
 import levelaanduiding from "../SVG/level-aanduiding.svg";
 import profile from "../SVG/profiel.svg";
+import Level from  '../components/Level';
+import Register from '../components/navigator';
 
 
 function settings() {
@@ -42,6 +44,9 @@ function settings() {
     <img src={profile} className="porfielsvg"></img>
 		
 	</div>
+
+
+    <Level />
 
     <img className="arrow" src={arrowsvg} ></img>
 
@@ -100,6 +105,8 @@ function settings() {
 	<div className="removeaccount">
 		<a href="#">verwijder je account</a>
 	</div>
+
+    <Register />
 
     </div>
 

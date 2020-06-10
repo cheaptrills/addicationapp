@@ -7,7 +7,7 @@ import noodknopicon from "../SVG/noodknop-icon.svg";
 import achievementicon from "../SVG/achievement-icon.svg";
 import '../css/stylejonas.css';
 import '../css/stylechloe.css';
-import './scale.js';
+//import './scale.js';
 
 import Level from  '../components/Level';
 import Register from '../components/navigator';
