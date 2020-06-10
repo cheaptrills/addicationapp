@@ -10,6 +10,8 @@ import level7 from "../SVG/level7.svg";
 import level8 from "../SVG/level8.svg";
 import levelbalk from "../SVG/level-balk.svg";
 import levelaanduiding from "../SVG/level-aanduiding.svg";
+import CurrentLevel from "../components/CurrentLevel";
+
 
 export class Level extends Component{
     render() {
@@ -25,12 +27,7 @@ export class Level extends Component{
                     <img src={level8} class="lev"/>
                 </div>
                 <br />
-                <div class="currentlevel">
-                    <img src={level1} class="level"/>
-                    <img src={levelbalk} class="levelbalk"/>
-                    <img src={levelaanduiding} class="levelaanduid"/>
-                    <img src={levelaanduiding} class="levelaanduid1"/>
-                </div>
+                <CurrentLevel />
             </div>
         )
     }

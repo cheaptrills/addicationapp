@@ -11,4 +11,8 @@ import AchievementsLevel from './achievements-level';
 
 import Launches from '../components/Launches';
 
-export {Register,Login,DiaryEntry,Diary,Home,Profile,Launches,Achievements,Settings, AchievementsLevel};
+
+import Opdrachtkeuze from './Opdracht-keuze';
+import DiaryMenu from './DiaryMenu';
+
+export {Register,Login,DiaryEntry,Diary,Home,Profile,Launches,Achievements,Settings, AchievementsLevel,Opdrachtkeuze,DiaryMenu};
