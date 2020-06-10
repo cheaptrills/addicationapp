@@ -22,4 +22,4 @@ export class CurrentLevel extends Component{
     }
 }
 
-export default Navigator;
+export default CurrentLevel;

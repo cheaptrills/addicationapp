@@ -46,8 +46,6 @@ function DiaryEntry() {
        <a href="dashboard.html"> 
         <img src="SVG/back-button.svg" alt="terugknop" class="terugknop"/>
         </a>
-        
-    
     </div>
     
      <br/>

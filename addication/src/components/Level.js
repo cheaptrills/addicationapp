@@ -10,6 +10,8 @@ import level7 from "../SVG/level7.svg";
 import level8 from "../SVG/level8.svg";
 import levelbalk from "../SVG/level-balk.svg";
 import levelaanduiding from "../SVG/level-aanduiding.svg";
+import CurrentLevel from "../components/CurrentLevel";
+
 
 export class Level extends Component{
     render() {

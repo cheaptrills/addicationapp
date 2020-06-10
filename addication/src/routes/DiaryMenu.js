@@ -1,6 +1,7 @@
 import React from 'react';
 //import './App.css';
 //import './chloestyle';
+import CurrentLevel from "../components/CurrentLevel";
 import backbutton from "../SVG/back-button.svg";
 
 function DiaryMenu() {
@@ -16,9 +17,7 @@ function DiaryMenu() {
           <p class="title"> DAGBOEK </p>
         </div>
         <br/>
-    
         <CurrentLevel />
-        
       </header>
       <div class="maindash"> 
         <a href="dagboek-vulin.html">
