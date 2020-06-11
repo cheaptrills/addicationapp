@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../css/stylejonas.css';
+//import '../css/stylejonas.css';
 import '../css/stylechloe.css';
 
 import level1 from "../SVG/level1.svg";

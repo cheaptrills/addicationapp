@@ -7,12 +7,15 @@ import DiaryEntry from './DiaryEntry';
 import Settings from './settings';
 import Achievements from './achievements';
 import AchievementsLevel from './achievements-level';
+import AchievementsMood from './achievements-mood';
+import AchievementsDairy from './achievements-dairy';
 
 
-import Launches from '../components/Launches';
+//import Launches from '../components/Launches';
 
 
 import Opdrachtkeuze from './Opdracht-keuze';
 import DiaryMenu from './DiaryMenu';
 
-export {Register,Login,DiaryEntry,Diary,Home,Profile,Launches,Achievements,Settings, AchievementsLevel,Opdrachtkeuze,DiaryMenu};
+export {Register,Login,DiaryEntry,Diary,Home,Profile,Achievements,Settings,
+     AchievementsLevel,Opdrachtkeuze,DiaryMenu,AchievementsMood,AchievementsDairy};

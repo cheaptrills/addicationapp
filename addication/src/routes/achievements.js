@@ -1,8 +1,8 @@
 import React from 'react';
 //import './App.css';
-import '../css/stylejonas.css';
+//import '../css/stylejonas.css';
 import '../css/stylechloe.css';
-import './scale.js';
+//import './scale.js';
 
 
 import award from "../SVG/award.svg";

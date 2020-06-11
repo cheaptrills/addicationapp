@@ -1,13 +1,14 @@
 import React from 'react';
 import logo from './logo.svg';
-import {Register,Profile,Login,Home,Settings,Achievements,AchievementsLevel,DiaryEntry,DiaryMenu,Opdrachtkeuze} from './routes/index';
+import {Register,Profile,Login,Home,Settings,Achievements,AchievementsLevel,AchievementsMood,DiaryEntry,DiaryMenu,Opdrachtkeuze,AchievementsDairy} from './routes/index';
 import './css/App.css';
 import { BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 //import {Register,Profile,Login,Home} from './routes/index';
-import Launches from  './components/Launches';
+//import Launches from  './components/Launches';
 //import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
 
-import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+//import {Register,Profile,Login,Home,,, } from './routes/index';
+//import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
 import {useGlobalState,useGlobalDispatch} from './context/GlobalContext';
 
 function App() {
@@ -50,6 +51,19 @@ function App() {
 
               
             </li>
+
+            <li>
+              <Link to="/achievementsMood">  AchievementsMood</Link>
+
+              
+            </li>
+            <li>
+              <Link to="/achievementsDairy">  AchievementsDairy</Link>
+
+              
+            </li>
+
+          
 
          
 
@@ -102,6 +116,19 @@ function App() {
 
           <Route path="/achievementsLevel">
               <     AchievementsLevel />
+          </Route>
+
+          <Route path="/achievementsDairy">
+              <          AchievementsDairy />
+          </Route>
+
+     
+
+          
+
+
+          <Route path="/achievementsMood">
+              <     AchievementsMood />
           </Route>
 
      
