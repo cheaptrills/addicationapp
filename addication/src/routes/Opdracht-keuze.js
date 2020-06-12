@@ -4,6 +4,7 @@ import React from 'react';
 import backbutton from "../SVG/back-button.svg";
 import gql from 'graphql-tag';
 import {useQuery} from 'react-apollo';
+import CurrentLevel from '../components/CurrentLevel';
 
 const GET_TASK = gql
 `{
@@ -32,24 +33,19 @@ function Opdrachtkeuze() {
           </a>
         </div>
         <br />
-       {/* <div class="currentlevel">
-          <img src="SVG/level1.svg" class="level"/>
-          <img src="SVG/level-balk.svg" class="levelbalk"/>
-          <img src="SVG/level-aanduiding.svg" class="levelaanduid"/>
-          <img src="SVG/level-aanduiding.svg" class="levelaanduid1"/>  
-  </div> */}
+       <CurrentLevel />
       </header>
       <div class="maindash"> 
         {
           data.tasks.map(task => (
-            <a href="opdracht-uitleg.html">
-          <button class="dash" id="opdrachten"> 
-            <div class="inhoud">
-              <p class="moeilijkheidsgraad"> {task.difficulty}</p>
-              <p> {task.title}</p>
-            </div>
-          </button>
-        </a>
+          <a href="opdracht-uitleg.html">
+            <button class="dash" id="opdrachten"> 
+              <div class="inhoud">
+                <p class="moeilijkheidsgraad"> {task.difficulty}</p>
+                <p> {task.title}</p>
+              </div>
+            </button>
+          </a>
           )) 
         }
       </div>
