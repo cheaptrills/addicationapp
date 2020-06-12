@@ -7,6 +7,7 @@ import DiaryEntry from './DiaryEntry';
 import Opdrachtkeuze from './Opdracht-keuze';
 import DiaryMenu from './DiaryMenu';
 import Opdrachtuitleg from './Opdrachtuitleg';
+import DiaryRead from './DiaryRead';
 
 
-export {Register,Login,DiaryEntry,Diary,Home,Profile,Opdrachtkeuze,DiaryMenu, Opdrachtuitleg};
+export {Register,Login,DiaryEntry,Diary,Home,Profile,Opdrachtkeuze,DiaryMenu, Opdrachtuitleg,DiaryRead};

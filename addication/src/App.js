@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 
-import {Register,Profile,Login,Home,Opdrachtkeuze,DiaryEntry, DiaryMenu, Opdrachtuitleg} from './routes/index';
+import {Register,Profile,Login,Home,Opdrachtkeuze,DiaryEntry, DiaryMenu,Diary, Opdrachtuitleg, DiaryRead} from './routes/index';
 import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
 import {useGlobalState,useGlobalDispatch} from './context/GlobalContext';
 
@@ -35,6 +35,9 @@ function App() {
               <Link to="/diarymenu">diarymenu</Link>
             </li>
             <li>
+              <Link to="/diary">diary</Link>
+            </li>
+            <li>
               <Link to="/opdrachtuitleg">opdrachtuitleg</Link>
             </li>
           </ul>
@@ -64,8 +67,14 @@ function App() {
           <Route path="/diarymenu">
             <DiaryMenu/>
           </Route>
+          <Route path="/diary">
+            <Diary/>
+          </Route>
           <Route path="/opdrachtuitleg">
             <Opdrachtuitleg/>
+          </Route>
+          <Route path="/diaryread">
+            <DiaryRead/>
           </Route>
         </Switch>
       </div>
