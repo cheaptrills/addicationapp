@@ -29,7 +29,7 @@ function DiaryRead() {
     <div className="base-container">
         <header>
             <div class="start"> 
-            <a href="diary.js"> 
+            <a href="/diary"> 
                 <img src={backbutton} alt="terugknop" class="terugknop"/>
             </a>
             </div>

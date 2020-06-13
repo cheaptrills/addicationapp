@@ -21,7 +21,7 @@ function Diary() {
 
  if(loading) return <h4>loading</h4>
  if(error) console.log(error);
- console.log(data);
+ //console.log(data);
 
   return (
   <div>
