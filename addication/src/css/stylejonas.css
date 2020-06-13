@@ -77,11 +77,34 @@
 }
 
 
+
+.settings-scrol
+{
+	width: 425px;
+	height:450px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: absolute;
+	top:300px;
+}
+
+.settings-scrol::-webkit-scrollbar {
+    display: none;
+}
+
+#scale:-webkit-scrollbar {
+    display: none;
+}
+
+
 #scale {
+    
+  
+    background-color: rgba(255, 255, 255, 1);
     position: absolute;
+    background-image: linear-gradient(#30aebb, #70bece);
     width: 425px;
     height:920.689px;
-    background-color: rgba(255, 255, 255, 1);
     overflow: hidden;
     --web-view-name: scale;
     --web-view-id: scale;
@@ -106,7 +129,7 @@
 
 
 .rect {
-	position: absolute;
+	
 	width: 132px;
 	height: 122px;
 	left: 147px;
@@ -114,7 +137,8 @@
     overflow: visible;
     filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
     background-color: white;
-     border-radius: 20px;  
+	 border-radius: 20px;  
+	 position: absolute;
 }
 
 
@@ -129,22 +153,13 @@
 }
 
 
-.gradient {
-    position: absolute;
-    overflow: hidden;
-    width: 425.5px;
-    height: 1241px;
-    left: -0.5px;
-    top: 0px;
-   background-image: linear-gradient(#30aebb, #70bece);
-}
 
 .change_firstname{
 	position: absolute;
 	width: 351px;
 	height: 67px;
 	left: 37px;
-	top: 416px;
+	/*top: 416px;*/
 	overflow: visible;
     filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
     background-color: white;
@@ -158,7 +173,8 @@ border-radius: 20px;
 	width: 351px;
 	height: 67px;
 	left: 37px;
-	top: 715px;
+	top: 300px;
+	/*top: 715px;*/
 	overflow: visible;
      filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
     background-color: white;
@@ -237,7 +253,8 @@ input {
 	width: 351px;
 	height: 67px;
 	left: 37px;
-	top: 616px;
+	top: 200px;
+	/*top: 616px;*/
 	overflow: visible;
      filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
     background-color: white;
@@ -250,7 +267,8 @@ border-radius: 20px;
 	width: 351px;
 	height: 67px;
 	left: 37px;
-	top: 814px;
+	/*top: 814px;*/
+	top: 400px;
 	overflow: visible;
      filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
     background-color: white;
@@ -263,7 +281,8 @@ border-radius: 20px;
 	width: 351px;
 	height: 67px;
 	left: 37px;
-	top: 516px;
+	/*top: 516px;*/
+	top: 100px;
 	overflow: visible;
      filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
     background-color: white;
@@ -272,21 +291,14 @@ border-radius: 20px;
 
 
 
-.change_password {
-	position: absolute;
-	width: 351px;
-	height: 67px;
-	left: 37px;
-	top: 715px;
-	overflow: visible;
-}
 
 .resetvooruitgang {
 	position: absolute;
 	width: 351px;
 	height: 67px;
 	left: 37px;
-	top: 913px;
+	top: 500px;
+	/*top: 913px;*/
 	overflow: visible;
     filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
     background-color: white;
@@ -298,7 +310,8 @@ border-radius: 20px;
 	width: 351px;
 	height: 67px;
 	left: 37px;
-	top: 1031px;
+	top: 600px;
+	/*top: 1031px;*/
 	overflow: visible;
     filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
     background-color: white;
@@ -328,7 +341,8 @@ border-radius: 20px;
 .removeaccount {
 	position: absolute;
 	left: 139px;
-	top: 1119px;
+	top: 700px;
+	/*top: 1119px;*/
 	overflow: visible;
 	width: 149px;
 	white-space: nowrap;
@@ -557,7 +571,7 @@ background-color: white;
 }
 
 
-#Group_21 {
+#achievements-box-1 {
 	position: absolute;
 	width: 341px;
 	height: 114px;
@@ -595,7 +609,7 @@ background-color: white;
 
 
 
-#Group_25 {
+#achievements-box-3 {
 	position: absolute;
 	width: 341px;
 	height: 115px;
@@ -603,7 +617,7 @@ background-color: white;
 	top: 633px;
 	overflow: visible;
 }
-#Group_17 {
+.level-box-opdrachten {
 	position: absolute;
 	width: 341px;
 	height: 115px;
@@ -652,7 +666,7 @@ background-color: white;
 	font-size: 12px;
 	color: rgba(16,166,177,1);
 }
-#Group_24 {
+#achievements-box-2 {
 	position: absolute;
 	width: 138px;
 	height: 31px;
@@ -743,29 +757,96 @@ background-color: white;
 }
 
 
-#Group_19_ {
+
+.contactpersonen {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
 	position: absolute;
+	overflow: visible;
+	width: 341px;
+	height: 115px;
+	left: 0px;
+	top: 0px;
+	border-radius: 23px;
+	background-color: rgba(255,255,255,0.902);
+}
+
+
+
+
+.noodsituatie {
+
+	position: absolute;
+	overflow: visible;
+	width: 341px;
+	height: 115px;
+	left: 0px;
+	top: 0px;
+	border-radius: 23px;
+	background-color: rgba(255,255,255,0.902);
+}
+.psychologen {
+	
+	position: absolute;
+	overflow: visible;
+	width: 341px;
+	height: 115px;
+	border-radius: 23px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(255,255,255,0.902);
+
+}
+
+.box1 {
+	position: absolute;
+	width: 341px;
+	height: 114px;
+	left: 42px;
+	top: 235px;
+	border-radius: 23px;
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	
+}
+
+
+
+.box2 {
+	position: absolute;
+	width: 341px;
+	height: 115px;
+	left: 42px;
+	top: 368px;
+	
+}
+#box3 {
+	position: absolute;
+	width: 341px;
+	height: 114px;
+	left: 42px;
+	top: 636px;
+	overflow: visible;
+	border-radius: 23px;
+	background-color: rgba(255,255,255,0.902);
+	
+}
+
+.hulp {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
 	width: 341px;
 	height: 114px;
 	left: 0px;
 	top: 0px;
-	overflow: visible;
+	border-radius: 23px;
+	background-color: rgba(255,255,255,0.902);
 }
-.Rectangle_9_ {
-	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+#hulp-text {
 	position: absolute;
-	overflow: visible;
-	width: 359px;
-	height: 132px;
-	left: 0px;
-	top: 0px;
-}
-#CONTACTPERSONEN {
-	position: absolute;
-	left: 14px;
+	left: 39px;
 	top: 42px;
 	overflow: visible;
-	width: 316px;
+	width: 265px;
 	height: 46px;
 	text-align: center;
 	font-family: Arial Rounded MT;
@@ -774,4 +855,410 @@ background-color: white;
 	font-size: 25px;
 	color: rgba(16,166,177,1);
 }
+#question {
+	position: absolute;
+	width: 58px;
+	height: 58px;
+	left: 18px;
+	top: 29px;
+	overflow: visible;
+}
 
+#box4 {
+	position: absolute;
+	width: 341px;
+	height: 114px;
+	left: 42px;
+	top: 502px;
+	overflow: visible;
+	border-radius: 23px;
+	background-color: rgba(255,255,255,0.902);
+
+}
+
+#NOODKNOP {
+    position: absolute;
+    left: 102px;
+    top: 60px;
+    overflow: visible;
+    width: 223px;
+    height: 46px;
+    text-align: center;
+    font-family: Arial Rounded MT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(236, 236, 235, 1);
+}
+
+
+
+.terugval-box-2 {
+	position: absolute;
+	width: 341px;
+	height: 415px;
+	left: 42px;
+	top: 322px;
+	overflow: visible;
+}
+.noodsituatie-rect-box {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 341px;
+	height: 415px;
+	left: 0px;
+	top: 0px;
+	background-color: rgba(255,255,255,0.902);
+	border-radius: 23px;
+}
+#noodsituatie-text-in-box {
+	position: absolute;
+	left: 61px;
+	top: 364px;
+	overflow: hidden;
+	width: 305px;
+	height: 252px;
+	text-align: left;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(16,166,177,1);
+}
+.noodsituatie-button {
+	position: absolute;
+	overflow: visible;
+	width: 240px;
+	height: 55px;
+	left: 93px;
+	top: 654px;
+	background-color:	rgba(112,190,206,0.851) ;
+	border-radius: 23px;
+	
+
+}
+#BEL_DRUGLIJN {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 240px;
+	height: 55px;
+	text-align: center;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+	background-color:	rgba(112,190,206,0.851) ;
+	border-radius: 23px;
+}
+
+.mood-opdrachten {
+	position: absolute;
+	width: 393px;
+	height: 70px;
+	left: 16px;
+	top: 245px;
+	overflow: visible;
+}
+#DRANG_TERUGVAL {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 394px;
+	height: 70px;
+	text-align: center;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+
+.noodknop-psy-box1{
+	position: absolute;
+	width: 341px;
+	height: 233px;
+	left: 35px;
+	top: 247px;
+	overflow: visible;
+}
+
+.noodknop-psy-box2 {
+	position: absolute;
+	width: 341px;
+	height: 233px;
+	left: 35px;
+	top: 530px;
+	overflow: visible;
+}
+.noodknop-psy-vierkant {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 359px;
+	height: 251px;
+	left: 0px;
+	top: 0px;
+	background-color:rgba(237,246,247,1);
+	border-radius: 23px;
+	
+}
+.noodknop-psy-text1{
+	position: absolute;
+	left: 39px;
+	top: 23px;
+	overflow: visible;
+	width: 265px;
+	height: 70px;
+	text-align: center;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(16,166,177,1);
+}
+.noodknop-psy-text2 {
+	position: absolute;
+	left: 39px;
+	top: 151px;
+	overflow: visible;
+	width: 265px;
+	height: 70px;
+	text-align: left;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgba(16,166,177,1);
+}
+.noodknop-psy-text3 {
+	position: absolute;
+	left: 39px;
+	top: 71px;
+	overflow: visible;
+	width: 265px;
+	height: 70px;
+	text-align: right;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgba(16,166,177,1);
+}
+
+.noodknop-babbel-tekst {
+	position: absolute;
+	width: 393px;
+	height: 456px;
+	left: 16px;
+	top: 245px;
+	overflow: visible;
+}
+.noodknop-babbel-h1 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 394px;
+	height: 70px;
+	text-align: center;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+.noodknop-babbel-p1{
+	position: absolute;
+	left: 0px;
+	top: 94px;
+	overflow: visible;
+	width: 394px;
+	height: 70px;
+	text-align: left;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+.noodknop-babbel-p2 {
+	position: absolute;
+	left: 0px;
+	top: 386px;
+	overflow: visible;
+	width: 394px;
+	height: 70px;
+	text-align: left;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+.noodknop-babbel-button1 {
+	position: absolute;
+	width: 341px;
+	height: 93px;
+	left: 42px;
+	top: 392px;
+	overflow: visible;
+	background-color:rgba(237,246,247,1) ;
+	border-radius: 23px;
+	
+}
+.noodknop-babbel-vierkant {
+	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 341px;
+	height: 93px;
+	left: 0px;
+	top: 0px;
+	background-color:rgba(237,246,247,1) ;
+	border-radius: 23px;
+
+}
+.noodknop-text-on-button {
+	position: absolute;
+	left: 39px;
+	top: 23px;
+	overflow: visible;
+	width: 265px;
+	height: 70px;
+	text-align: center;
+	font-family: Arial Rounded MT;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 25px;
+	color: rgba(16,166,177,1);
+}
+
+
+.noodknop-contact-button1 {
+
+	position: absolute;
+	width: 341px;
+	height: 93px;
+	left: 42px;
+	top: 260px;
+	overflow: visible;
+	background-color:rgba(237,246,247,1) ;
+	border-radius: 23px;
+
+
+}
+
+
+.noodknop-contact-button2 {
+
+	position: absolute;
+	width: 341px;
+	height: 93px;
+	left: 42px;
+	top: 400px;
+	overflow: visible;
+	background-color:rgba(237,246,247,1) ;
+	border-radius: 23px;
+
+
+}
+.noodknop-babbel-button2 {
+	position: absolute;
+	width: 341px;
+	height: 93px;
+	left: 42px;
+	top: 513px;
+	overflow: visible;
+	background-color:rgba(237,246,247,1) ;
+	border-radius: 23px;
+}
+
+.noodknop-babbel-button3 {
+	position: absolute;
+	width: 341px;
+	height: 93px;
+	left: 42px;
+	top: 670px;
+	overflow: visible;
+	background-color:rgba(237,246,247,1) ;
+	border-radius: 23px;
+}
+
+#plus1 {
+	position: absolute;
+	width: 67px;
+	height: 66px;
+	left: 179px;
+	top: 580px;
+	overflow: visible;
+	
+}
+
+.add-contact-input
+
+
+{
+	
+	position: absolute;
+	overflow: visible;
+	width: 300px;
+	height: 50px;
+	left: 10px;
+	top: 20px;
+	background-color:rgba(237,246,247,1) ;
+	border: none;
+
+ 
+    
+    
+}
+
+#OPSLAAN {
+	position: absolute;
+	left: 135px;
+	top: 730px;
+	overflow: visible;
+	width: 162px;
+	height: 37px;
+	text-align: center;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(112,190,206,0.749);
+	border-radius: 23px;
+}
+
+#OPSLAAN input
+
+{
+	position: absolute;
+top: 0;
+left: 0;
+	overflow: visible;
+	width: 162px;
+	height: 37px;
+	text-align: center;
+	
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	color: rgba(112,190,206,0.749);
+	border-radius: 23px;
+}
+
+.dottedborder {
+	position: absolute;
+	overflow: visible;
+	width: 230px;
+	height: 180px;
+	left: 100px;
+	top: 520px;
+	border: 1px white dotted;
+	border-radius: 23px;
+}

@@ -21,6 +21,7 @@ import level8 from "../SVG/level8.svg";
 import levelbalk from "../SVG/level-balk.svg";
 import levelaanduiding from "../SVG/level-aanduiding.svg";
 import Level from  '../components/Level';
+import Register from '../components/navigator';
 
 
 
@@ -30,7 +31,7 @@ function Achievements() {
 
   return (
 
-    <div id="scale" className="gradient">
+    <div id="scale" >
 
 
 <Level />
@@ -106,7 +107,7 @@ function Achievements() {
 
 
 	
-   
+	<Register />
     
 
 

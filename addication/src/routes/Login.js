@@ -11,7 +11,7 @@ function Login() {
 
   return (
 
-    <div id="scale" className="gradient">
+
     <div className="App"> 
       <div className="base-container">
         <header>
@@ -37,7 +37,7 @@ function Login() {
       </div>
     </div>
 
-    </div>
+
   );
 }
 

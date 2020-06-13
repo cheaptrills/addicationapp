@@ -8,7 +8,7 @@ import '../scale/scale.js';
 
 
 
-import Question from "../SVG/question.svg";
+
 import arrow from "../SVG/arrow.svg";
 import level1 from "../SVG/level1.svg";
 import level2 from "../SVG/level2.svg";
@@ -27,7 +27,7 @@ import Register from '../components/navigator';
 
 
 
-function Noodknop() {
+function NoodknopHulp() {
 
   return (
 
@@ -43,44 +43,28 @@ function Noodknop() {
    <a href="#"><img class="arrow" src={arrow}></img></a>
 	
 
-   <div id="NOODKNOP">
-		<span>NOODKNOP</span>
-	</div>
-	<div  class="box1">
-		<div class="noodsituatie">
-		<input type="button" value="NOODSITUATIE" class="noodsituatie" onClick="" />
+   <div class="mood-opdrachten">
+		<div id="DRANG_TERUGVAL">
+			<span>HULP</span>
 		</div>
-		
 	</div>
-	
-		<div class="box2">
-			<div class="psychologen">
-			<input type="button" value="PSYCHOLOGEN" class="psychologen" onClick="" />
-			</div>
-		</div>	
-	
-	<div id="box3">
-	
-			<div class="hulp">
-			<input type="button" value="HULP" class="hulp" onClick="" />
-	
-		
+
+   <div class="terugval-box-2">
+		<div class="noodsituatie-rect-box">
+			
 		</div>
-		<img id="question" src={Question}></img>
+	</div>
+	<div id="noodsituatie-text-in-box">
+		<span>Om het dagboek in te vullen tap je gewoon op de button. Elke nieuwe dag kan je terug het dagboek + de moodslider invullen. 
+Je kan per dag deze maar 1 keer invullen. We raden aan de moodslider in de loop van de dag in te vullen + het dagboek 's avonds!</span>
+
+	</div>
+	<div class="noodsituatie-button">
+		
+		<input type="button" value="BEGREPEN" id="BEL_DRUGLIJN" onClick="" />
+
 	</div>
 
-	<div  id="box4">
-		
-			<div class="contactpersonen">
-			<input type="button" value="CONTACTPERSONEN" class="contactpersonen" onClick="" />
-			</div>
-		
-		
-	</div>
-
-
-	
-	
 	
 
 	<Register />
@@ -93,4 +77,4 @@ function Noodknop() {
   );
 }
 
-export default Noodknop;
+export default NoodknopHulp;

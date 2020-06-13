@@ -8,7 +8,7 @@ import '../scale/scale.js';
 
 
 
-import Question from "../SVG/question.svg";
+import Plus1 from "../SVG/plus1.svg";
 import arrow from "../SVG/arrow.svg";
 import level1 from "../SVG/level1.svg";
 import level2 from "../SVG/level2.svg";
@@ -27,7 +27,7 @@ import Register from '../components/navigator';
 
 
 
-function Noodknop() {
+function NoodknopContactpersonen() {
 
   return (
 
@@ -43,54 +43,42 @@ function Noodknop() {
    <a href="#"><img class="arrow" src={arrow}></img></a>
 	
 
-   <div id="NOODKNOP">
-		<span>NOODKNOP</span>
-	</div>
-	<div  class="box1">
-		<div class="noodsituatie">
-		<input type="button" value="NOODSITUATIE" class="noodsituatie" onClick="" />
+
+	<div class="noodknop-contact-button1">
+		<div class="noodknop-babbel-vierkant">
+	
+			<input type="button" value="Mama" class="noodknop-babbel-vierkant" onClick="" />
+
+			
 		</div>
-		
-	</div>
 	
-		<div class="box2">
-			<div class="psychologen">
-			<input type="button" value="PSYCHOLOGEN" class="psychologen" onClick="" />
-			</div>
-		</div>	
-	
-	<div id="box3">
-	
-			<div class="hulp">
-			<input type="button" value="HULP" class="hulp" onClick="" />
-	
-		
 		</div>
-		<img id="question" src={Question}></img>
-	</div>
-
-	<div  id="box4">
-		
-			<div class="contactpersonen">
-			<input type="button" value="CONTACTPERSONEN" class="contactpersonen" onClick="" />
-			</div>
-		
-		
-	</div>
-
-
 	
+	<div class="noodknop-contact-button2">
+		<div class="noodknop-babbel-vierkant">
+		<input type="button" value="Tom" class="noodknop-babbel-vierkant" onClick="" />
+
+		</div>
 	
+		</div>
+
+
+		<img  id="plus1" src={Plus1} ></img>
+
+		
+
+
+
 	
 
 	<Register />
    
-    
+    </div>
 
-</div>
+
   
 
   );
 }
 
-export default Noodknop;
+export default NoodknopContactpersonen;

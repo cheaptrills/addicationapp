@@ -15,7 +15,7 @@ function Home() {
 
   return (
 
-    <div id="scale" className="gradient">
+    
     <div className="base-container">
       <header>
         <Level />
@@ -56,7 +56,7 @@ function Home() {
       </div>
       <Register />
     </div>
-    </div>
+ 
     );
 }
 

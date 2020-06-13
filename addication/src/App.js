@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import {Register,Profile,Login,Home,Settings,Achievements,AchievementsLevel,AchievementsMood,DiaryEntry,DiaryMenu,Opdrachtkeuze,AchievementsDairy} from './routes/index';
+import {Register,Profile,Login,Home,Settings,Achievements,AchievementsLevel,AchievementsMood,DiaryEntry,DiaryMenu,Opdrachtkeuze,AchievementsDairy,NoodknopMain,NoodsituatieDrangterugval} from './routes/index';
 import './css/App.css';
 import { BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 //import {Register,Profile,Login,Home} from './routes/index';
@@ -63,6 +63,21 @@ function App() {
               
             </li>
 
+            <li>
+              <Link to="/NoodknopMain">     NoodknopMain</Link>
+
+              
+            </li>
+            <li>
+              <Link to="/NoodsituatieDrangterugval">      NoodsituatieDrangterugval</Link>
+
+              
+            </li>
+            
+
+           
+         
+
           
 
          
@@ -122,6 +137,10 @@ function App() {
               <          AchievementsDairy />
           </Route>
 
+          <Route path="/NoodknopMain">
+              <          NoodknopMain />
+          </Route>
+
      
 
           
@@ -130,6 +149,12 @@ function App() {
           <Route path="/achievementsMood">
               <     AchievementsMood />
           </Route>
+
+          <Route path="/NoodsituatieDrangterugval">
+              <      NoodsituatieDrangterugval />
+          </Route>
+
+         
 
      
         </Switch>

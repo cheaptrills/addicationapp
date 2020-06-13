@@ -1,7 +1,7 @@
 import React from 'react';
 //import './App.css';
 import '../css/stylejonas.css';
-import './scale.js';
+import '../scale/scale.js';
 
 
 
@@ -30,7 +30,7 @@ function achievementsQuit() {
 
   return (
 
-    <div id="scale" className="gradient">
+    <div id="scale" >
 
 
 
@@ -42,7 +42,7 @@ function achievementsQuit() {
    <a href="#"><img class="arrow" src={arrow}></img></a>
 	
 
-	<div id="Group_21">
+	<div id="achievements-box-1">
 		<div class="opdracht1">
 	
 		</div>
@@ -53,7 +53,7 @@ function achievementsQuit() {
 	
 	</div>
 	
-		<div id="Group_24">
+		<div id="achievements-box-2">
 	
 	</div>
 

@@ -31,12 +31,8 @@ var Application = function() {
 	this.viewScaleSliderId = "ViewScaleSliderInput";
 	this.pageRefreshedName = "showPageRefreshedNotification";
 	this.prefix = "--web-";
-	this.applicationStylesheet = "settings.js" ;
-	this.applicationStylesheet = "achievements.js" ;
-	this.applicationStylesheet = "Register.js" ;
-	this.applicationStylesheet = "Home.js" ;
-	this.applicationStylesheet = "Diary.js" ;
-	this.applicationStylesheet = "achievements-level.js" ;
+	this.applicationStylesheet = null;
+	
 
 
 	this.mediaQueryDictionary = {};

@@ -1,7 +1,7 @@
 import React from 'react';
 //import './App.css';
 import '../css/stylejonas.css';
-import './scale.js';
+import '../scale/scale.js';
 
 
 
@@ -20,8 +20,7 @@ import levelbalk from "../SVG/level-balk.svg";
 import levelaanduiding from "../SVG/level-aanduiding.svg";
 //import Level from  '../components/Level';
 import Register from '../components/navigator';
-//import scaling from '../components/scale';
-import AutoScale from 'react-auto-scale';
+
 
 
 
@@ -33,14 +32,12 @@ function achievementsDairy() {
 
 
 
-    <div id="scale" className="gradient">
+    <div  id="scale">
 
-		
+	
 
-		
+			<div class="testbox">
 
-
-<AutoScale>
 
 
 
@@ -48,7 +45,7 @@ function achievementsDairy() {
    <a href="#"><img class="arrow" src={arrow}></img></a>
 	
 
-	<div id="Group_21">
+	<div id="achievements-box-1">
 		<div class="opdracht1">
 	
 		</div>
@@ -59,13 +56,13 @@ function achievementsDairy() {
 	
 	</div>
 	
-		<div id="Group_24">
+		<div id="achievements-box-2">
 	
 	</div>
 
 
 
-	<div id="Group_25">
+	<div id="achievements-box-3">
 		<div id="Group_17">
 			<div class="opdracht2">
 				
@@ -93,7 +90,8 @@ function achievementsDairy() {
 
 	<Register />
 
-	</AutoScale>
+	</div>
+
 
 	</div>
    

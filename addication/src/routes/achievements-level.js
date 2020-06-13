@@ -1,7 +1,7 @@
 import React from 'react';
 //import './App.css';
 import '../css/stylejonas.css';
-import './scale.js';
+import '../scale/scale.js';
 
 
 
@@ -30,7 +30,7 @@ function achievementsLevel() {
 
   return (
 
-    <div id="scale" className="gradient">
+    <div id="scale" >
 
 
 
@@ -42,7 +42,7 @@ function achievementsLevel() {
    <a href="#"><img class="arrow" src={arrow}></img></a>
 	
 
-	<div id="Group_21">
+	<div id="achievements-box-1">
 		<div class="opdracht1">
 	
 		</div>
@@ -51,15 +51,15 @@ function achievementsLevel() {
 		</div>
 	</div>
 	
-		<div id="Group_24">
+		<div id="achievements-box-2">
 		<div id="Moeilijkheid____">
 			<span>Moeilijkheid: ++</span>
 		</div>
 	</div>
 
 
-	<div id="Group_25">
-		<div id="Group_17">
+	<div id="achievements-box-3">
+		<div class="level-box-opdrachten">
 			<div class="opdracht2">
 				
 			</div>

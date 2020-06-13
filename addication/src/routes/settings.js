@@ -2,7 +2,7 @@ import React from 'react';
 //import './App.css';
 import '../css/stylejonas.css';
 import '../css/stylechloe.css';
-import './scale.js';
+import '../scale/scale.js';
 
 import pencilsvg from "../SVG/pencil.svg";
 import arrowsvg from "../SVG/arrow.svg";
@@ -33,26 +33,28 @@ function settings() {
 
    
    
-    
+
 
 
     
     <a href="#"><img className="arrow" src={arrowsvg} ></img> </a> 
 
-	<div className="rect">
+	<div class="rect">
 
     <img src={profile} className="porfielsvg"></img>
 		
 	</div>
 
 
-    <Level />
+
+
+    
 
     <img className="arrow" src={arrowsvg} ></img>
 
 	
 
-
+    <div class="settings-scrol">
 	
 	  <div className="change_firstname">
              
@@ -89,7 +91,8 @@ function settings() {
       
         
           <div className="resetvooruitgang"> 
-        <input type="button" value="reset je vooruitgang" id="button" onClick="" />
+          <input type="button" value="reset vooruitgang" id="button" onClick="" />
+
       </div>
       
         
@@ -105,7 +108,7 @@ function settings() {
 	<div className="removeaccount">
 		<a href="#">verwijder je account</a>
 	</div>
-
+</div>
     <Register />
 
     </div>
