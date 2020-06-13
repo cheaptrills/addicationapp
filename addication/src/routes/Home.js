@@ -7,15 +7,19 @@ import noodknopicon from "../SVG/noodknop-icon.svg";
 import achievementicon from "../SVG/achievement-icon.svg";
 import Level from  '../components/Level';
 import Register from '../components/navigator';
-function Home() {
+import { useHistory } from 'react-router-dom';
 
+function Home() {
+  const history = useHistory();
   return (
+
+    
     <div className="base-container">
       <header>
         <Level />
       </header>
       <div class="maindash"> 
-        <a href="opdrachten.html">
+        <a onClick={()=>history.push("/opdrachtkeuze")}>
           <button class="dash" id="opdrachten"> 
           <div class="inhoud">
             <img src={opdrachtenicon} alt="opdrachten" class="icons"/>
@@ -23,7 +27,7 @@ function Home() {
           </div>
           </button>
         </a>
-        <a href="dagboek.html">
+        <a onClick={()=>history.push("/diarymenu")}>
           <button class="dash" id="dagboek"> 
             <div class="inhoud">
               <img src={diaryicon} alt="opdrachten" class="icons" id="dag"/>

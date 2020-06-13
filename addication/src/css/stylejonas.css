@@ -1,11 +1,10 @@
 
 .nav {
     position: absolute;
-    width: 389px;
+    width: 375px;
     height: 78px;
-    left: 18px;
     top: 829px;
-    overflow: visible;
+    overflow: hidden;
 }
 
 .dagboek {
