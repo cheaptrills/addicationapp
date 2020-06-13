@@ -1,7 +1,6 @@
 import React from 'react';
 //import './App.css';
 import '../css/stylejonas.css';
-import '../scale/scale.js';
 
 
 

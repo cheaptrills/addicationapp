@@ -1,6 +1,12 @@
 
 @font-face { font-family: Arial Rounded MT; src: url('../font/unicode.arialr.ttf'); } 
 
+body
+
+{
+	background-image: linear-gradient(#30aebb, #70bece);
+}
+
 .nav {
     position: absolute;
     width: 389px;
@@ -63,18 +69,7 @@
 
 
 
-.mediaViewInfo {
-    --web-view-name: scale;
-    --web-view-id: scale;
-    --web-scale-to-fit: true;
-    --web-scale-to-fit-type: width;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
-}
 
-:root {
-    --web-view-ids: scale;
-}
 
 
 
@@ -90,21 +85,12 @@
 
 
 
-#scale {
-    
-  
-    background-color: rgba(255, 255, 255, 1);
-    position: absolute;
-    background-image: linear-gradient(#30aebb, #70bece);
-    width: 425px;
+
+#wrapper
+
+{
+	width: 425px;
     height:920.689px;
-    overflow: hidden;
-    --web-view-name: scale;
-    --web-view-id: scale;
-    --web-scale-to-fit: true;
-    --web-scale-to-fit-type: width;
-    --web-scale-on-resize: true;
-    --web-enable-deep-linking: true;
 }
 
 
@@ -1248,3 +1234,145 @@ left: 0;
 	border: 1px white dotted;
 	border-radius: 23px;
 }
+
+#scale {
+    
+  
+    
+    position: absolute;
+
+    width: 425px;
+    height:920.689px;
+	overflow: hidden;
+	  
+   
+}
+
+@media screen and (max-width: 320px) and (min-width: 320px) {
+	#scale {
+		transform-origin: 0px 0px; 
+		transform: scale(0.7529);
+	}
+  }
+
+  @media screen and (max-width: 375px) and (min-width: 375px) {
+	#scale {
+		transform-origin: 0px 0px; 
+		transform: scale(0.8824);
+	}
+  }
+
+  @media screen and (max-width: 425px) and (min-width: 425px) {
+	#scale {
+		transform-origin: 0px 0px; 
+		transform: scale(1);
+	}
+  }
+
+
+  @media screen and (max-width: 360px) and (min-width: 360px) {
+	#scale {
+		transform-origin: 0px 0px; 
+		transform: scale(0.8471);
+	}
+  }
+
+  @media screen and (max-width: 384px) and (min-width: 384px) {
+	#scale {
+		transform-origin: 0px 0px; 
+		transform: scale(0.9035);
+	}
+  }
+
+  @media screen and (max-width: 412px) and (min-width: 412px) {
+	#scale {
+		transform-origin: 0px 0px; 
+		transform: scale(0.9694);
+	}
+  }
+
+  @media screen and (max-width: 240px) and (min-width: 240px) {
+	#scale {
+		transform-origin: 0px 0px; 
+		transform: scale(0.5647);
+	}
+  }
+
+  @media screen and (max-width: 411px) and (min-width: 411px) {
+	#scale {
+		transform-origin: 0px 0px;
+		 transform: scale(0.9671)
+	}
+  }
+
+
+  @media screen and (max-width: 414px) and (min-width: 411px) {
+	#scale {
+		transform-origin: 0px 0px; 
+		transform: scale(0.9741);
+	}
+  }
+
+  @media screen and (max-width: 294px) and (min-width: 294px) {
+	#scale {
+		transform-origin: 0px 0px; 
+		transform: scale(0.6918);
+	}
+  }
+
+  @media screen and (max-width: 401px) and (min-width: 401px) {
+	#scale {
+		transform-origin: 0px 0px; 
+		transform: scale(0.9435);
+	}
+  }
+
+  @media screen and (max-width: 424px) and (min-width: 424px) {
+	#scale {
+		transform-origin: 0px 0px; 
+		transform: scale(0.9976)
+	}
+  }
+
+  @media screen and (max-width: 402px) and (min-width: 424px) {
+	#scale {
+		transform-origin: 0px 0px; 
+		transform: scale(0.9459);
+	}
+  }
+
+  @media screen and (max-width: 393px) and (min-width: 393px) {
+	#scale {
+		transform-origin: 0px 0px; 
+		transform: scale(0.9224);
+	}
+  }
+
+  @media screen and (max-width:   480px) and (min-width: 480px) {
+	#scale {
+
+		left:0;
+		transform-origin: 0px 0px; 
+		transform: scale(1.12941176471);
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

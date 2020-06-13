@@ -2,7 +2,8 @@ import React from 'react';
 //import './App.css';
 import '../css/stylejonas.css';
 import '../css/stylechloe.css';
-import '../scale/scale.js';
+
+
 
 
 import award from "../SVG/award.svg";
@@ -25,7 +26,7 @@ function Achievements() {
   return (
 
 
-	<div>
+	<div id="wrapper">
 
 
 		<Tags/>

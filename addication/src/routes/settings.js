@@ -2,7 +2,7 @@ import React from 'react';
 //import './App.css';
 import '../css/stylejonas.css';
 import '../css/stylechloe.css';
-import '../scale/scale.js';
+
 
 import pencilsvg from "../SVG/pencil.svg";
 import arrowsvg from "../SVG/arrow.svg";
