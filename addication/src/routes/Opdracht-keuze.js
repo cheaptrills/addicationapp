@@ -29,7 +29,7 @@ function Opdrachtkeuze() {
     <div className="base-container">
       <header>
         <div class="start"> 
-          <a href="dashboard.html"> 
+          <a onClick={()=>history.push("/home")}> 
             <img src={backbutton} alt="terugknop" class="terugknop"/>
           </a>
         </div>
