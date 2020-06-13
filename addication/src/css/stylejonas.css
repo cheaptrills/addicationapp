@@ -88,13 +88,6 @@
 	top:300px;
 }
 
-.settings-scrol::-webkit-scrollbar {
-    display: none;
-}
-
-#scale:-webkit-scrollbar {
-    display: none;
-}
 
 
 #scale {
@@ -124,6 +117,9 @@
     letter-spacing: 1px;
     font-weight: 800;
 }
+
+
+
 
 
 
@@ -323,17 +319,7 @@ input:focus{
 }
 
 
-.level {
-	position: absolute;
-	width: 159px;
-	height: 57px;
-	left: 129px;
-	top: 235px;
-	overflow: visible;
-      filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
-    background-color: white;
-border-radius: 20px;
-}
+
 
 
 
@@ -366,7 +352,7 @@ border-radius: 20px;
 
 
 
-.level {
+.level-jonas {
 	filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
 	position: absolute;
 	overflow: visible;
@@ -379,7 +365,7 @@ border-radius: 20px;
 }
 
 
-.level input 
+.level-jonas input 
 
 
 {

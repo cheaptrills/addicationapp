@@ -19,8 +19,9 @@ import level7 from "../SVG/level7.svg";
 import level8 from "../SVG/level8.svg";
 import levelbalk from "../SVG/level-balk.svg";
 import levelaanduiding from "../SVG/level-aanduiding.svg";
-//import Level from  '../components/Level';
+import Level from  '../components/Level';
 import Register from '../components/navigator';
+import Tags from '../components/Metatags';
 
 
 
@@ -29,6 +30,10 @@ import Register from '../components/navigator';
 function achievementsQuit() {
 
   return (
+
+	<div>
+		<Tags/>
+
 
     <div id="scale" >
 
@@ -41,6 +46,7 @@ function achievementsQuit() {
    
    <a href="#"><img class="arrow" src={arrow}></img></a>
 	
+	<Level/>
 
 	<div id="achievements-box-1">
 		<div class="opdracht1">
@@ -85,6 +91,8 @@ function achievementsQuit() {
 
 
     </div>
+
+	</div>
 
   );
 }
