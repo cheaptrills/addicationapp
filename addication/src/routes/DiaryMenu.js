@@ -28,7 +28,8 @@ function DiaryMenu() {
             </div>
           </button>
         </a>
-        <a href="dagboek-moodslider.html">
+        <a href="dagboek-mo
+        odslider.html">
           <button class="dash" id="dagboek"> 
             <div class="inhoud">
             <p> MOODSLIDER</p>

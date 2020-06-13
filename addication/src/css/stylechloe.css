@@ -211,9 +211,8 @@ p.moeilijkheidsgraad{
     background-color:#EFF7F8;
     font-size: 20px;
     font-family:'Lato', sans-serif ;
-   margin-top: 15px;
-    margin-right: auto;
-    margin-left: 40px;
+    margin-top: 15px;
+    margin: 3%;
     z-index:-1;
 }
 .btnopdracht{
@@ -280,8 +279,7 @@ ul{
     padding-top: 19px;
     padding-left: 35px;
     margin-top: -90px;
-    /* margin-right: auto; */
-    margin-left: 150px;
+    margin-left: 40%;
     text-decoration: none;
 }
 
