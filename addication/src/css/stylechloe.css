@@ -2,15 +2,14 @@
 
 
 body{
-background-color: #75d1e2;
-background-image: linear-gradient(135deg, #AEDBE2 49%, #2EADBA 100%);
-background-repeat: no-repeat;
-/*margin:0,0;*/
+    background-color: #75d1e2;
+    background-image: linear-gradient(135deg, #AEDBE2 49%, #2EADBA 100%);
+    background-repeat: no-repeat;
     background-size: cover;
-    width:425.5px;
-    height:920.689px;
-    margin-left:auto;
-    margin-right:auto;
+    width:100vw;
+    height:100vh;
+    margin: 0;
+    padding: 0;
 }
 
 .logo{
@@ -18,16 +17,13 @@ background-repeat: no-repeat;
     margin-left:auto;
     margin-right:auto;
     padding-top:100px;
-    
 }
 
-.form{
-    
+.form{  
     width:350px;
     padding-top:50px;
     margin-left:auto;
-    margin-right:auto;
-   
+    margin-right:auto;  
 }
 .form__field{
     /*margin-left: 15px;
@@ -146,7 +142,7 @@ p{
 }
 .currentlevel{
     display: inline-flex;
-    margin-left:15px;
+    margin-left:0px;
     padding-top:15px;
    
 }
@@ -418,3 +414,11 @@ div.inhouddagboek{
     font-size:15px;
     font-family: 'Lato', sans-serif;
 }
+
+/* VINCE CSS */
+
+header {
+
+    margin: 0 auto;
+}
+
