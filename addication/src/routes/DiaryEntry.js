@@ -45,7 +45,7 @@ function DiaryEntry() {
     <div>
       <header>
         <div class="start">
-          <a href="dashboard.html">
+          <a onClick={()=>history.push("/diarymenu")}>
             <img src={backbutton} alt="terugknop" class="terugknop" />
           </a>
         </div>

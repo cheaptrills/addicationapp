@@ -1,15 +1,17 @@
 import React from 'react';
 import CurrentLevel from '../components/CurrentLevel';
 import backbutton from "../SVG/back-button.svg";
+import { useHistory } from 'react-router-dom';
 
 
 function Opdrachtuitleg() {
+    const history = useHistory();
 
   return (
     <div className="base-container">
         <header>
             <div class="start"> 
-                <a href="dashboard.html"> 
+                <a onClick={()=>history.push("/opdrachtkeuze")}> 
                     <img src={backbutton} alt="terugknop" class="terugknop"/>
                 </a>
             </div>

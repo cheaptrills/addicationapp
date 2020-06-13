@@ -5,6 +5,7 @@ import backbutton from "../SVG/back-button.svg";
 import gql from 'graphql-tag';
 import {useQuery} from 'react-apollo';
 import CurrentLevel from '../components/CurrentLevel';
+import { useHistory } from 'react-router-dom';
 
 const GET_TASK = gql
 `{
@@ -15,7 +16,7 @@ const GET_TASK = gql
 }`;
 
 function Opdrachtkeuze() {
-
+  const history = useHistory();
   const{
      loading, error, data 
   }= useQuery(GET_TASK);
@@ -38,7 +39,7 @@ function Opdrachtkeuze() {
       <div class="maindash"> 
         {
           data.tasks.map(task => (
-          <a href="opdracht-uitleg.html">
+          <a onClick={()=>history.push("/Opdrachtuitleg")}>
             <button class="dash" id="opdrachten"> 
               <div class="inhoud">
                 <p class="moeilijkheidsgraad"> {task.difficulty}</p>

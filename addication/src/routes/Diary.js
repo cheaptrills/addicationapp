@@ -1,6 +1,7 @@
 import React, {useState, useContext} from 'react';
 import CurrentLevel from '../components/CurrentLevel';
 import backbutton from "../SVG/back-button.svg";
+import { useHistory } from 'react-router-dom';
 
 import gql from 'graphql-tag';
 import {useQuery} from 'react-apollo';
@@ -15,6 +16,8 @@ const GET_DIARIES = gql
 
 function Diary() {
 
+  const history = useHistory();
+
   const{
     loading, error, data 
  }= useQuery(GET_DIARIES);
@@ -27,7 +30,7 @@ function Diary() {
   <div>
     <header>
       <div class="start"> 
-        <a href="dashboard.html"> 
+        <a onClick={()=>history.push("/diarymenu")}> 
           <img src={backbutton} alt="terugknop" class="terugknop"/>
         </a>
       </div>
