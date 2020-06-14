@@ -2,9 +2,9 @@ import React, {useState, useContext} from 'react';
 import CurrentLevel from '../components/CurrentLevel';
 import backbutton from "../SVG/back-button.svg";
 import { useHistory } from 'react-router-dom';
-
 import gql from 'graphql-tag';
 import {useQuery} from 'react-apollo';
+
 
 //import './App.css';
 const GET_DIARIES = gql
@@ -51,6 +51,7 @@ function Diary() {
         }
     </div>
   </div>
+
   );
 
     

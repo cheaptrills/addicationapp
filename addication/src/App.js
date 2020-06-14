@@ -1,8 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
-
-import {Register,Profile,Login,Home,Opdrachtkeuze,DiaryEntry, DiaryMenu,Diary, Opdrachtuitleg, DiaryRead} from './routes/index';
-import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+import {Register,Profile,Login,Home,Settings,Achievements,AchievementsLevel,AchievementsMood,DiaryEntry,DiaryMenu,Opdrachtkeuze,AchievementsDairy,NoodknopMain,NoodsituatieDrangterugval} from './routes/index';
+import './css/App.css';
+import { BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+//import {Register,Profile,Login,Home} from './routes/index';
+//import Launches from  './components/Launches';
+//import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
 import {useGlobalState,useGlobalDispatch} from './context/GlobalContext';
 
 function App() {
@@ -24,7 +27,60 @@ function App() {
             </li>
             <li>
               <Link to="/login">login</Link>
+
+
             </li>
+
+            <li>
+              <Link to="/settings">settings</Link>
+
+              
+            </li>
+
+            <li>
+              <Link to="/achievements">achievements</Link>
+
+              
+            </li>
+
+            <li>
+              <Link to="/achievementsLevel">AchievementsLevel</Link>
+
+              
+            </li>
+
+            <li>
+              <Link to="/achievementsMood">  AchievementsMood</Link>
+
+              
+            </li>
+            <li>
+              <Link to="/achievementsDairy">  AchievementsDairy</Link>
+
+              
+            </li>
+
+            <li>
+              <Link to="/NoodknopMain">     NoodknopMain</Link>
+
+              
+            </li>
+            <li>
+              <Link to="/NoodsituatieDrangterugval">      NoodsituatieDrangterugval</Link>
+
+              
+            </li>
+            
+
+           
+         
+
+          
+
+         
+
+
+
             <li>
               <Link to="/opdrachtkeuze">opdrachtlijst</Link>
             </li>
@@ -67,14 +123,31 @@ function App() {
           <Route path="/diarymenu">
             <DiaryMenu/>
           </Route>
-          <Route path="/diary">
-            <Diary/>
+          <Route path="/settings">
+              <Settings />
           </Route>
-          <Route path="/opdrachtuitleg">
-            <Opdrachtuitleg/>
+
+          <Route path="/achievements">
+              <Achievements />
           </Route>
-          <Route path="/diaryread">
-            <DiaryRead/>
+
+          <Route path="/achievementsLevel">
+              <     AchievementsLevel />
+          </Route>
+
+          <Route path="/achievementsDairy">
+              <          AchievementsDairy />
+          </Route>
+
+          <Route path="/NoodknopMain">
+              <          NoodknopMain />
+          </Route>
+          <Route path="/achievementsMood">
+              <     AchievementsMood />
+          </Route>
+
+          <Route path="/NoodsituatieDrangterugval">
+              <      NoodsituatieDrangterugval />
           </Route>
         </Switch>
       </div>

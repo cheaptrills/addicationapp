@@ -1,6 +1,7 @@
 import React from 'react';
 //import './App.css';
-//import './stylechloe.css';
+import '../css/stylejonas.css';
+import '../css/stylechloe.css';
 import logosvg from "../SVG/logo.svg";
 import profielsvg from "../SVG/profiel.svg";
 import passwordsvg from "../SVG/password.svg";
@@ -9,6 +10,8 @@ import passwordsvg from "../SVG/password.svg";
 function Login() {
 
   return (
+
+
     <div className="App"> 
       <div className="base-container">
         <header>
@@ -33,6 +36,8 @@ function Login() {
           </div>
       </div>
     </div>
+
+
   );
 }
 
