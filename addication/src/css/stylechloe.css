@@ -12,6 +12,19 @@ body{
     padding: 0;
 }
 
+*
+
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+    font-family: Arial Rounded MT;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+
 .logo{
     width:180px;
     margin-left:auto;
