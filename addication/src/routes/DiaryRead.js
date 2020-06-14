@@ -5,7 +5,6 @@ import backbutton from "../SVG/back-button.svg";
 
 import gql from 'graphql-tag';
 import {useQuery} from 'react-apollo';
-import Diary from './Diary';
 
 const GET_DIARY = gql
 `{
