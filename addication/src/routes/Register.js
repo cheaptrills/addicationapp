@@ -8,16 +8,29 @@ import '../css/stylejonas.css';
 import '../css/stylechloe.css';
 //import './scale.js';
 import {useUserDispatch} from "../context/UserContext";
+import gql from "graphql-tag";
+import {useMutation} from "@apollo/react-hooks";
+
+const ADD_USER = gql`
+  mutation AddUser ($username: String!,$password: String!,$drug: Int!){
+    signup(username:$username,password:$password,drug:$drug){
+      token
+    }
+  }
+`
 
 function Register() {
 
+  const [signup,{data}]=useMutation(ADD_USER); 
+  console.log(data);
   const dispatch = useUserDispatch();
 
   const [fields, setFields] = useState({
 
     username: null,
     password: null,
-    confirmpassword: null
+    confirmpassword: null,
+    drug: 0,
 
   });
 
@@ -42,15 +55,14 @@ function Register() {
     }
 
     if(errors.length === 0){
+      signup({
+        variables: fields
+      });
       dispatch({type: "setUser", value: {username: fields.username}});
-      history.push("/home");
+     // history.push("/home");
     }else{
       setErrorMessages(errors);
     }
-
-    //
-    //TODO: roep post aan voor een register in de backend
-    //
   } 
 
   const setField = ({target}, field) => {
@@ -86,6 +98,12 @@ function Register() {
             <img src={password} className="icon" />          
             <input type="password" className="form-control" name="passwordconfirmation" id="passwordconfirmation" placeholder="Wachtwoord confirmatie" onChange={event=>setField(event,"confirmpassword")}/>
           </div>
+          <label for="drugs">Choose a drug:</label>
+          <select name="drugs" id="drugs" onChange={event=>{setField(event,"drug")}}>
+            <option value="1">wiet</option>
+            <option value="2">coke</option>
+            <option value="3">alcohol</option>
+          </select>
         </div>
       </div>
       <div className="form__field"> 
