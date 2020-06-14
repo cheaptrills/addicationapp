@@ -4,7 +4,9 @@ import {useHistory} from "react-router-dom";
 import logo from "../SVG/logo.svg";
 import password from "../SVG/password.svg";
 import gebruikersnaam from "../SVG/profiel.svg";
+import '../css/stylejonas.css';
 import '../css/stylechloe.css';
+//import './scale.js';
 import {useUserDispatch} from "../context/UserContext";
 
 function Register() {
@@ -60,6 +62,8 @@ function Register() {
   };
 
   return (
+
+  
   <div className="App">  
     <div className="base-container">
       <header>
@@ -90,6 +94,7 @@ function Register() {
       <a className="link-account" href="login.js">Heb je al een account?</a>
     </div>
   </div>  
+   
     );
 }
 

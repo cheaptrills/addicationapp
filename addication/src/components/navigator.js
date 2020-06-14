@@ -12,7 +12,7 @@ export class Navigator extends Component{
         return(
             <div>
                 <nav  class="nav">
-                    <img class=".navbox" src={navigator} />
+                    <img class="navbox" src={navigator} />
                     <a href="#">
                         <img src={home} alt="" class="home"></img>
                     </a>
