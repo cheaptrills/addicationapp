@@ -15,7 +15,7 @@ function Opdrachten() {
     
     </div>
     
-     <br>
+     <br />
       <div class="currentlevel">
       <img src="SVG/level1.svg" class="level"/>
        <img src="SVG/level-balk.svg" class="levelbalk"/>
