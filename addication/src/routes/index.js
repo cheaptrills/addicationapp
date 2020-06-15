@@ -10,7 +10,9 @@ import AchievementsLevel from "./achievements-level";
 import AchievementsMood from "./achievements-mood";
 import AchievementsDairy from "./achievements-dairy";
 import NoodknopMain from "./noodknop-main";
-import NoodsituatieDrangterugval from "./noodsituatie-bijwerkingen";
+import NoodsituatieBijwerkingen from "./noodsituatie-bijwerkingen";
+import Noodknopnoodsituatie from "./noodknop-noodsituatie";
+import NoodsituatieDrangterugval from "./noodsituatie-drangterugval";
 
 //import Launches from '../components/Launches';
 
@@ -37,4 +39,5 @@ export {
   NoodsituatieDrangterugval,
   DiaryRead,
   Opdrachtuitleg,
+  Noodknopnoodsituatie,
 };
