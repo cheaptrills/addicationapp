@@ -2,15 +2,14 @@ import React, { useState, useContext } from "react";
 import CurrentLevel from "../components/CurrentLevel";
 import backbutton from "../SVG/back-button.svg";
 import { useHistory } from "react-router-dom";
-import {useUserState} from "../context/UserContext";
-
+import { useUserState } from "../context/UserContext";
 
 import gql from "graphql-tag";
 import { useQuery } from "react-apollo";
 
 const GET_DIARIES = gql`
-  query Diaries($userid: String){
-    diaries(userID: $userid){
+  query Diaries($userid: String) {
+    diaries(userID: $userid) {
       title
     }
   }
@@ -18,12 +17,12 @@ const GET_DIARIES = gql`
 
 function Diary() {
   const history = useHistory();
-  const {user} = useUserState();
+  const user = useUserState();
 
-  const { loading, error, data } = useQuery(GET_DIARIES,{
+  const { loading, error, data } = useQuery(GET_DIARIES, {
     variables: {
-      userid: user.id
-    }
+      userid: user.id,
+    },
   });
 
   if (loading) return <h4>loading</h4>;

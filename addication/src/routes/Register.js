@@ -108,9 +108,9 @@ function Register() {
           </div>
           <label for="drugs">Choose a drug:</label>
           <select name="drugs" id="drugs" onChange={event=>{setField(event,"drug")}}>
-            <option value="1">wiet</option>
-            <option value="2">coke</option>
-            <option value="3">alcohol</option>
+            <option value={1}>wiet</option>
+            <option value={2}>coke</option>
+            <option value={3}>alcohol</option>
           </select>
         </div>
       </div>
