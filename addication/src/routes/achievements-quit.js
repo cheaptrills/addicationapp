@@ -1,11 +1,6 @@
-import React from 'react';
+import React from "react";
 //import './App.css';
-import '../css/stylejonas.css';
-
-
-
-
-
+import "../css/stylejonas.css";
 
 import gestopt from "../SVG/gestopt.svg";
 import arrow from "../SVG/arrow.svg";
@@ -19,81 +14,42 @@ import level7 from "../SVG/level7.svg";
 import level8 from "../SVG/level8.svg";
 import levelbalk from "../SVG/level-balk.svg";
 import levelaanduiding from "../SVG/level-aanduiding.svg";
-import Level from  '../components/Level';
-import Register from '../components/navigator';
-import Tags from '../components/Metatags';
-
-
-
-
+import Level from "../components/Level";
+import Register from "../components/navigator";
+import Tags from "../components/Metatags";
 
 function achievementsQuit() {
-
   return (
+    <div>
+      <Tags />
 
-	<div>
-		<Tags/>
+      <div id="scale">
+        <a href="#">
+          <img class="arrow" src={arrow}></img>
+        </a>
 
+        <Level />
 
-    <div id="scale" >
+        <div id="achievements-box-1">
+          <div class="opdracht1"></div>
 
+          <div id="Wandeling_maken">
+            <span>2 dagen</span>
+          </div>
+        </div>
 
+        <div id="achievements-box-2"></div>
 
+        <div class="levelbox"></div>
 
+        <div id="Level_1">
+          <span>Gestopt</span>
+        </div>
+        <img id="award" src={gestopt}></img>
 
-
-
-   
-   <a href="#"><img class="arrow" src={arrow}></img></a>
-	
-	<Level/>
-
-	<div id="achievements-box-1">
-		<div class="opdracht1">
-	
-		</div>
-
-		<div id="Wandeling_maken">
-			<span>2 dagen</span>
-		</div>
-	
-	</div>
-	
-		<div id="achievements-box-2">
-	
-	</div>
-
-
-
-
-	
-		
-
-
-
-
-
-
-	<div class="levelbox">
-		
-	</div>
-
-	<div id="Level_1">
-		<span>Gestopt</span>
-	</div>
-	<img id="award" src={gestopt} ></img>
-	
-	
-
-	<Register />
-   
-    
-
-
+        <Register />
+      </div>
     </div>
-
-	</div>
-
   );
 }
 
