@@ -1,21 +1,27 @@
 import React from "react";
 //import './App.css';
 import "../css/stylejonas.css";
+import Level from "../components/Level";
+import backbutton from "../SVG/back-button.svg";
 
 import arrow from "../SVG/arrow.svg";
 import Register from "../components/navigator";
 import Tags from "../components/Metatags";
+import { useHistory } from "react-router-dom";
 
 function NoodknopPsy() {
+  const history = useHistory();
+
   return (
     <div>
       <Tags />
 
       <div id="scale" className="gradient">
-        <a href="#">
-          <img class="arrow" src={arrow}></img>
-        </a>
-
+        <div class="start">
+          <a onClick={() => history.push("/noodknopmain")}>
+            <img src={backbutton} alt="terugknop" class="terugknop" />
+          </a>
+        </div>
         <Level />
         <div class="noodknop-psy-box1">
           <svg class="noodknop-psy-vierkant">

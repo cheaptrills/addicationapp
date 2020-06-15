@@ -1,12 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
-import {Register,Profile,Login,Home,Settings,Achievements,AchievementsLevel,AchievementsMood,Opdrachtuitleg,DiaryRead,DiaryEntry,DiaryMenu,Diary,Opdrachtkeuze,AchievementsDairy,Noodknopnoodsituatie,NoodknopMain,NoodsituatieDrangterugval} from './routes/index';
+import {Register,Profile,Login,Home,Settings,Achievements,Noodknophulp,AchievementsLevel,AchievementsMood,Opdrachtuitleg,DiaryRead,DiaryEntry,DiaryMenu,Diary,Opdrachtkeuze,AchievementsDairy,Noodknopnoodsituatie,NoodknopMain,NoodsituatieDrangterugval, Opdrachten, Opdrachthulp, Noodknoppsychologen} from './routes/index';
 import './css/App.css';
 import { BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 //import {Register,Profile,Login,Home} from './routes/index';
 //import Launches from  './components/Launches';
 //import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
 import {useGlobalState,useGlobalDispatch} from './context/GlobalContext';
+import NoodknopBijwerkingen from './routes/noodsituatie-bijwerkingen';
 
 function App() {
   let dispatch = useGlobalDispatch();
@@ -72,6 +73,21 @@ function App() {
           </Route>
           <Route path="/NoodsituatieDrangterugval">
               <NoodsituatieDrangterugval />
+          </Route>
+          <Route path="/Opdrachten">
+              <Opdrachten />
+          </Route>
+          <Route path="/Opdrachthulp">
+              <Opdrachthulp />
+          </Route>
+          <Route path="/noodknophulp">
+              <Noodknophulp />
+          </Route>
+          <Route path="/noodknoppsychologen">
+              <Noodknoppsychologen />
+          </Route>
+          <Route path="/noodsituatiebijwerkingen">
+              <NoodknopBijwerkingen />
           </Route>
         </Switch>
       </div>

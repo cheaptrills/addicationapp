@@ -1,45 +1,54 @@
 import React from "react";
-//import './App.css';
 import "../css/stylejonas.css";
 
-import arrow from "../SVG/arrow.svg";
-
+//import './App.css';
 import Level from "../components/Level";
 import Register from "../components/navigator";
 import Tags from "../components/Metatags";
+import CurrentLevel from "../components/CurrentLevel";
+import { useHistory } from "react-router-dom";
+import backbutton from "../SVG/back-button.svg";
+
 
 function NoodknopHulp() {
+  const history = useHistory();
+
   return (
     <div>
-      <Tags />
-      <div id="scale" className="gradient">
-        <a href="#">
-          <img class="arrow" src={arrow}></img>
-        </a>
+      <header>
+        <div class="start">
+          <a onClick={() => history.push("/opdrachten")}>
+            <img src={backbutton} alt="terugknop" class="terugknop" />
+          </a>
+        </div>
 
-        <div class="mood-opdrachten">
-          <div id="DRANG_TERUGVAL">
-            <span>HULP</span>
+        <br />
+        <br />
+
+        <CurrentLevel />
+      </header>
+
+      <div class="maindash">
+        <button class="dash1" id="opdrachten">
+          <div class="inhoudopdracht">
+            <h2 id="hulp"> Hulp </h2>
+            <p class="uitleg">
+              Om het dagboek in te vullen tap je gewoon op de button. Elke
+              nieuwe dag kan je terug het dagboek + de moodslider invullen. Je
+              kan per dag deze maar 1 keer invullen. We raden aan de moodslider
+              in de loop van de dag in te vullen + het dagboek 's avonds!
+            </p>
           </div>
-        </div>
+        </button>
 
-        <div class="terugval-box-2">
-          <div class="noodsituatie-rect-box"></div>
+        <div class="form__field">
+          <a onClick={() => history.push("/noodknopmain")} class="hulpbtn">
+            BEGREPEN
+          </a>
         </div>
-        <div id="noodsituatie-text-in-box">
-          <span>
-            Om het dagboek in te vullen tap je gewoon op de button. Elke nieuwe
-            dag kan je terug het dagboek + de moodslider invullen. Je kan per
-            dag deze maar 1 keer invullen. We raden aan de moodslider in de loop
-            van de dag in te vullen + het dagboek 's avonds!
-          </span>
-        </div>
-        <div class="noodsituatie-button">
-          <input type="button" value="BEGREPEN" id="BEL_DRUGLIJN" onClick="" />
-        </div>
-
-        <Register />
       </div>
+
+      <Register />
     </div>
   );
 }

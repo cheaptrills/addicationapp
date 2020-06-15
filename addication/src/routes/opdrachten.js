@@ -1,31 +1,32 @@
 import React from 'react';
+import CurrentLevel from '../components/CurrentLevel';
+import { useHistory } from "react-router-dom";
+import backbutton from "../SVG/back-button.svg";
+import hulp from "../SVG/hulp-icon.svg";
+
+
 //import './App.css';
 //import './chloestyle.css';
 
 function Opdrachten() {
+    const history = useHistory();
 
   return (
     <div className="base-container">
          <header>
     <div class="start"> 
-       <a href="dashboard.html"> 
-        <img src="SVG/back-button.svg" alt="terugknop" class="terugknop"/>
+       <a onClick={() => history.push("/home")}> 
+        <img src={backbutton} alt="terugknop" class="terugknop"/>
         </a>
         <p class="title"> OPDRACHTEN </p>
     
     </div>
     
      <br />
-      <div class="currentlevel">
-      <img src="SVG/level1.svg" class="level"/>
-       <img src="SVG/level-balk.svg" class="levelbalk"/>
-       <img src="SVG/level-aanduiding.svg" class="levelaanduid"/>
-       <img src="SVG/level-aanduiding.svg" class="levelaanduid1"/>
-       
-       </div>
+      <CurrentLevel />
    </header>
        <div class="maindash"> 
-       <a href="opdracht-keuze.html">
+       <a onClick={() => history.push("/opdrachtkeuze")}>
      <button class="dash" id="opdrachten"> 
      <div class="inhoud">
       
@@ -43,10 +44,10 @@ function Opdrachten() {
      </button>
       </a> 
       
-      <a href="opdracht-hulp.html"> 
+      <a onClick={() => history.push("/opdrachthulp")}> 
        <button class="dash" id="noodknop"> 
        <div class="inhoud">
-      <img src="SVG/hulp-icon.svg" alt="hulp" class="hulpicon"/>
+      <img src={hulp}alt="hulp" class="hulpicon"/>
       <p> HULP</p>
            </div>
      </button>

@@ -53,7 +53,7 @@ function Noodknop() {
           </button>
         </a>
 
-        <a onClick={() => history.push("/noodknophulp")}>
+        <a onClick={() => history.push("/contactpersonen")}>
           <button class="dash" id="help">
             <div class="inhoud">
               <p> contactpersonen</p>

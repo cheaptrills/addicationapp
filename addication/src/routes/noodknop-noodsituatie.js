@@ -6,64 +6,58 @@ import arrow from "../SVG/arrow.svg";
 import Level from "../components/Level";
 import Register from "../components/navigator";
 import Tags from "../components/Metatags";
+import { useHistory } from "react-router-dom";
+import backbutton from "../SVG/back-button.svg";
 
 function NoodknopNoodsituatie() {
+  const history = useHistory();
+
   return (
     <div>
       <Tags />
 
       <div id="scale" className="gradient">
-        <a href="#">
-          <img class="arrow" src={arrow}></img>
-        </a>
+        <div class="start">
+          <a onClick={() => history.push("/NOODKNOPMAIN")}>
+            <img src={backbutton} alt="terugknop" class="terugknop" />
+          </a>
+        </div>
 
         <Level />
-        <div id="NOODKNOP">
-          <span>NOODKNOP</span>
-        </div>
-        <div class="box1">
-          <div class="noodsituatie">
-            <input
-              type="button"
-              value="DRANG TERUGVAL"
-              class="noodsituatie"
-              onClick=""
-            />
-          </div>
-        </div>
 
-        <div class="box2">
-          <div class="psychologen">
-            <input
-              type="button"
-              value="BIJWERKINGEN"
-              class="psychologen"
-              onClick=""
-            />
-          </div>
-        </div>
+        <a onClick={() => history.push("/noodsituatiedrangterugval")}>
+          <button class="dash" id="noodknop">
+            <div class="inhoud">
+              <p> Drang Terugval </p>
+            </div>
+          </button>
+        </a>
 
-        <div id="box3">
-          <div class="hulp">
-            <input
-              type="button"
-              value="AMBULANCE NODIG"
-              class="hulp"
-              onClick=""
-            />
-          </div>
-        </div>
+        <a onClick={() => history.push("/noodsituatiebijwerkingen")}>
+          <button class="dash" id="noodknop">
+            <div class="inhoud">
+              <p> Bijwerkingen </p>
+            </div>
+          </button>
+        </a>
 
-        <div id="box4">
-          <div class="contactpersonen">
-            <input
-              type="button"
-              value="NOOD AAN BABBEL"
-              class="contactpersonen"
-              onClick=""
-            />
-          </div>
-        </div>
+        <a onClick={() => history.push("/noodknoppsychologen")}>
+          <button class="dash" id="noodknop">
+            <div class="inhoud">
+              <p> Contactpersoon </p>
+            </div>
+          </button>
+        </a>
+        <br />
+        <br />
+        <br />
+        <a onClick={() => history.push("/noodknoppsychologen")}>
+          <button class="dash" id="noodknop">
+            <div class="inhoud">
+              <p> Ambulance </p>
+            </div>
+          </button>
+        </a>
 
         <Register />
       </div>

@@ -20,7 +20,7 @@ function Home() {
         <Level />
       </header>
       <div class="maindash">
-        <a onClick={() => history.push("/opdrachtkeuze")}>
+        <a onClick={() => history.push("/opdrachten")}>
           <button class="dash" id="opdrachten">
             <div class="inhoud">
               <img src={opdrachtenicon} alt="opdrachten" class="icons" />

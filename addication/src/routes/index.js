@@ -9,10 +9,15 @@ import Achievements from "./achievements";
 import AchievementsLevel from "./achievements-level";
 import AchievementsMood from "./achievements-mood";
 import AchievementsDairy from "./achievements-dairy";
+
 import NoodknopMain from "./noodknop-main";
 import NoodsituatieBijwerkingen from "./noodsituatie-bijwerkingen";
 import Noodknopnoodsituatie from "./noodknop-noodsituatie";
 import NoodsituatieDrangterugval from "./noodsituatie-drangterugval";
+import Noodknophulp from "./noodknop-hulp";
+import Opdrachten from "./opdrachten";
+import Opdrachthulp from "./Opdrachthulp";
+import Noodknoppsychologen from "./noodknop-psychologen";
 
 //import Launches from '../components/Launches';
 
@@ -40,4 +45,10 @@ export {
   DiaryRead,
   Opdrachtuitleg,
   Noodknopnoodsituatie,
+  Noodknoppsychologen,
+  Opdrachten,
+  Opdrachthulp,
+  Noodknophulp,
+  NoodsituatieBijwerkingen,
+
 };
