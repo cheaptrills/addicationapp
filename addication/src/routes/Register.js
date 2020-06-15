@@ -32,7 +32,7 @@ function Register() {
     username: null,
     password: null,
     confirmpassword: null,
-    drug: 0,
+    drug: 1,
 
   });
 
