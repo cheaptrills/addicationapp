@@ -1,32 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import {GlobalProvider} from './context/GlobalContext';
-import { UserProvider } from './context/UserContext';
-import { DiaryProvider } from './context/DiaryContext';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import { GlobalProvider } from "./context/GlobalContext";
+import { UserProvider } from "./context/UserContext";
+import { DiaryProvider } from "./context/DiaryContext";
 
-import ApolloClient from 'apollo-boost';
-import { ApolloProvider } from 'react-apollo';
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo";
 
 const client = new ApolloClient({
-  uri: 'http://localhost:3001/graphql',
+  uri: "http://localhost:3001/graphql",
 });
 
 ReactDOM.render(
   <ApolloProvider client={client}>
-    <DiaryProvider>
+    <GlobalProvider>
       <UserProvider>
-        <GlobalProvider>
-        <React.StrictMode>
-          <App />
-        </React.StrictMode>
-        </GlobalProvider>
+        <DiaryProvider>
+          <React.StrictMode>
+            <App />
+          </React.StrictMode>
+        </DiaryProvider>
       </UserProvider>
-    </DiaryProvider>
+    </GlobalProvider>
   </ApolloProvider>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

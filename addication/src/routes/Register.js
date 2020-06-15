@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import {useHistory} from "react-router-dom";
 
 import logo from "../SVG/logo.svg";
@@ -15,6 +15,9 @@ const ADD_USER = gql`
   mutation AddUser ($username: String!,$password: String!,$drug: Int!){
     signup(username:$username,password:$password,drug:$drug){
       token
+      user {
+        id
+      }
     }
   }
 `
@@ -22,7 +25,6 @@ const ADD_USER = gql`
 function Register() {
 
   const [signup,{data}]=useMutation(ADD_USER); 
-  console.log(data);
   const dispatch = useUserDispatch();
 
   const [fields, setFields] = useState({
@@ -37,6 +39,13 @@ function Register() {
   const [errorMessages,setErrorMessages]=useState([]);
 
   let history = useHistory();
+
+  useEffect(()=>{
+    if(data){
+      dispatch({type: "setUser", value: {username: fields.username,token: data.signup.token,userid: data.signup.user.id }});
+      history.push("/home");
+    }
+  },[data]);
 
   const handleSubmit = ()=> {
 
@@ -58,8 +67,7 @@ function Register() {
       signup({
         variables: fields
       });
-      dispatch({type: "setUser", value: {username: fields.username}});
-     // history.push("/home");
+      
     }else{
       setErrorMessages(errors);
     }

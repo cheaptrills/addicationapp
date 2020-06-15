@@ -1,31 +1,34 @@
 import React from 'react';
+
 //import './App.css';
 import CurrentLevel from '../components/CurrentLevel';
 import backbutton from "../SVG/back-button.svg";
-
+import {useUserState} from "../context/UserContext";
 import gql from 'graphql-tag';
 import { useQuery } from 'react-apollo';
 import { useHistory } from 'react-router-dom';
 
 
-const GET_DIARY = gql
-  `{
-  diary( _id :"5ee233ecc654b537a89361df" ) {
-    title
-    entry
-  }
-}`;
+const GET_DIARY = gql`
+    query Diary($userid: ID ){
+      diary( _id: $userid){
+        title
+        entry
+      }
+    }
+`;
 
 function DiaryRead() {
   let history = useHistory();
-
-  const {
-    loading, error, data
-  } = useQuery(GET_DIARY);
+  const user = useUserState();
+  const {loading, error, data } = useQuery(GET_DIARY,{
+    variables: {
+      userid: user.id
+    }
+  });
 
   if (loading) return <h4>loading</h4>
   if (error) console.log(error);
-  console.log(data);
 
   return (
     <div className="base-container">
