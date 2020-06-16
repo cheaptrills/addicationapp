@@ -2,7 +2,7 @@ import React from "react";
 //import './App.css';
 import "../css/stylejonas.css";
 import backbutton from "../SVG/back-button.svg";
-
+import level from "../components/Level";
 import Question from "../SVG/question.svg";
 import arrow from "../SVG/arrow.svg";
 import Register from "../components/navigator";

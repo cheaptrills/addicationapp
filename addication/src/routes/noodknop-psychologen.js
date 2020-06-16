@@ -13,8 +13,7 @@ function NoodknopPsy() {
   const history = useHistory();
 
   return (
-    <div>
-      <Tags />
+  
 
       <div id="scale" className="gradient">
         <div class="start">
@@ -72,7 +71,6 @@ function NoodknopPsy() {
 
         <Register />
       </div>
-    </div>
   );
 }
 
