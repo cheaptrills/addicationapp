@@ -5,8 +5,11 @@ import "../css/stylechloe.css";
 import logosvg from "../SVG/logo.svg";
 import profielsvg from "../SVG/profiel.svg";
 import passwordsvg from "../SVG/password.svg";
+import { useHistory } from 'react-router-dom';
 
 function Login() {
+  let history = useHistory();
+
   return (
     <div className="App">
       <div className="base-container">
@@ -24,6 +27,7 @@ function Login() {
                 name="name"
                 id="naam"
                 placeholder="Gebruikersnaam"
+                onChange={event=>setField(event,"username")}
               ></input>
             </div>
             <div className="form__field">
@@ -34,13 +38,14 @@ function Login() {
                 name="password"
                 id="password"
                 placeholder="Wachtwoord"
+                onChange={event=>setField(event,"password")}
               ></input>
             </div>
             <div class="form__field">
-              <input type="submit" value="Login" class="btn"></input>
+              <input type="submit" value="Login" class="btn" onClick={handleSubmit}></input>
             </div>
           </div>
-          <a className="link-account" href="register.js">
+          <a className="link-account" onClick={()=>history.push("/register")}>
             Heb je nog geen account?
           </a>
         </div>
