@@ -1,9 +1,13 @@
 import React from 'react';
 import logo from './logo.svg';
-
-import {Register,Profile,Login,Home,Opdrachtkeuze,DiaryEntry, DiaryMenu,Diary, Opdrachtuitleg, DiaryRead} from './routes/index';
-import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
+import {Register,Profile,Login,Home,Settings,Achievements,Noodknophulp,AchievementsLevel,AchievementsMood,Opdrachtuitleg,DiaryRead,DiaryEntry,DiaryMenu,Diary,Opdrachtkeuze,AchievementsDairy,Noodknopnoodsituatie,NoodknopMain,NoodsituatieDrangterugval, Opdrachten, Opdrachthulp, Noodknoppsychologen} from './routes/index';
+import './css/App.css';
+import { BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
+//import {Register,Profile,Login,Home} from './routes/index';
+//import Launches from  './components/Launches';
+//import { BrowserRouter as Router,Switch,Route,Link } from "react-router-dom";
 import {useGlobalState,useGlobalDispatch} from './context/GlobalContext';
+import NoodknopBijwerkingen from './routes/noodsituatie-bijwerkingen';
 
 function App() {
   let dispatch = useGlobalDispatch();
@@ -12,39 +16,9 @@ function App() {
     <Router>
       <div>
         <nav>
-          <ul>
-            <li>
-              <Link to="/">Register</Link>
-            </li>
-            <li>
-              <Link to="/profile">profile</Link>
-            </li>
-            <li>
-              <Link to="/home">home</Link>
-            </li>
-            <li>
-              <Link to="/login">login</Link>
-            </li>
-            <li>
-              <Link to="/opdrachtkeuze">opdrachtlijst</Link>
-            </li>
-            <li>
-              <Link to="/diaryentry">diaryentry</Link>
-            </li>
-            <li>
-              <Link to="/diarymenu">diarymenu</Link>
-            </li>
-            <li>
-              <Link to="/diary">diary</Link>
-            </li>
-            <li>
-              <Link to="/opdrachtuitleg">opdrachtuitleg</Link>
-            </li>
-          </ul>
+          
         </nav>
-        <input type="text" onBlur={(d)=>{dispatch({type: "user", value: {username: d.target.value}})}} />
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+
         <Switch>
           <Route exact path="/">
             <Register/>
@@ -76,10 +50,48 @@ function App() {
           <Route path="/diaryread">
             <DiaryRead/>
           </Route>
+          <Route path="/settings">
+              <Settings />
+          </Route>
+          <Route path="/achievements">
+              <Achievements />
+          </Route>
+          <Route path="/achievementsLevel">
+              <AchievementsLevel />
+          </Route>
+          <Route path="/achievementsDairy">
+              <AchievementsDairy />
+          </Route>
+          <Route path="/NoodknopMain">
+              <NoodknopMain />
+          </Route>
+          <Route path="/noodknopnoodsituatie">
+              <Noodknopnoodsituatie />
+          </Route>
+          <Route path="/achievementsMood">
+              <AchievementsMood />
+          </Route>
+          <Route path="/NoodsituatieDrangterugval">
+              <NoodsituatieDrangterugval />
+          </Route>
+          <Route path="/Opdrachten">
+              <Opdrachten />
+          </Route>
+          <Route path="/Opdrachthulp">
+              <Opdrachthulp />
+          </Route>
+          <Route path="/noodknophulp">
+              <Noodknophulp />
+          </Route>
+          <Route path="/noodknoppsychologen">
+              <Noodknoppsychologen />
+          </Route>
+          <Route path="/noodsituatiebijwerkingen">
+              <NoodknopBijwerkingen />
+          </Route>
         </Switch>
       </div>
     </Router>
-    
   );
 }
 

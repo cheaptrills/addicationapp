@@ -1,15 +1,20 @@
 import React from "react";
-import backbutton from "../SVG/back-button.svg";
-import CurrentLevel from "../components/CurrentLevel";
-import { useHistory } from "react-router-dom";
+import "../css/stylejonas.css";
 
 //import './App.css';
+import Level from "../components/Level";
+import Register from "../components/navigator";
+import Tags from "../components/Metatags";
+import CurrentLevel from "../components/CurrentLevel";
+import { useHistory } from "react-router-dom";
+import backbutton from "../SVG/back-button.svg";
 
-function Opdrachthulp() {
+
+function NoodknopHulp() {
   const history = useHistory();
+
   return (
-    /* hier komt de include van header en level */
-    <div className="base-container">
+    <div>
       <header>
         <div class="start">
           <a onClick={() => history.push("/opdrachten")}>
@@ -28,22 +33,24 @@ function Opdrachthulp() {
           <div class="inhoudopdracht">
             <h2 id="hulp"> Hulp </h2>
             <p class="uitleg">
-              Om een opdracht te kunnen kiezen, tap je gewoon op de buttons! Je
-              moet elke dag 2 verschillende opdrachten uitvoeren. In welke
-              volgorde je ze doet, bepaal je zelf. Je moet deze voltooien om
-              naar een hoger level te gaan. Succes!
+              Om het dagboek in te vullen tap je gewoon op de button. Elke
+              nieuwe dag kan je terug het dagboek + de moodslider invullen. Je
+              kan per dag deze maar 1 keer invullen. We raden aan de moodslider
+              in de loop van de dag in te vullen + het dagboek 's avonds!
             </p>
           </div>
         </button>
 
         <div class="form__field">
-          <a onClick={() => history.push("/opdrachten")} class="hulpbtn">
+          <a onClick={() => history.push("/noodknopmain")} class="hulpbtn">
             BEGREPEN
           </a>
         </div>
       </div>
+
+      <Register />
     </div>
   );
 }
 
-export default Opdrachthulp;
+export default NoodknopHulp;

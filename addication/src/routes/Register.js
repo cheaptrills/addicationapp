@@ -1,27 +1,51 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import {useHistory} from "react-router-dom";
 
 import logo from "../SVG/logo.svg";
 import password from "../SVG/password.svg";
 import gebruikersnaam from "../SVG/profiel.svg";
+import '../css/stylejonas.css';
 import '../css/stylechloe.css';
+//import './scale.js';
 import {useUserDispatch} from "../context/UserContext";
+import gql from "graphql-tag";
+import {useMutation} from "@apollo/react-hooks";
+
+const ADD_USER = gql`
+  mutation AddUser ($username: String!,$password: String!,$drug: Int!){
+    signup(username:$username,password:$password,drug:$drug){
+      token
+      user {
+        id
+      }
+    }
+  }
+`
 
 function Register() {
 
+  const [signup,{data}]=useMutation(ADD_USER); 
   const dispatch = useUserDispatch();
 
   const [fields, setFields] = useState({
 
     username: null,
     password: null,
-    confirmpassword: null
+    confirmpassword: null,
+    drug: 1,
 
   });
 
   const [errorMessages,setErrorMessages]=useState([]);
 
   let history = useHistory();
+
+  useEffect(()=>{
+    if(data){
+      dispatch({type: "setUser", value: {username: fields.username,token: data.signup.token,userid: data.signup.user.id }});
+      history.push("/home");
+    }
+  },[data]);
 
   const handleSubmit = ()=> {
 
@@ -40,15 +64,13 @@ function Register() {
     }
 
     if(errors.length === 0){
-      dispatch({type: "setUser", value: {username: fields.username}});
-      history.push("/home");
+      signup({
+        variables: fields
+      });
+      
     }else{
       setErrorMessages(errors);
     }
-
-    //
-    //TODO: roep post aan voor een register in de backend
-    //
   } 
 
   const setField = ({target}, field) => {
@@ -60,6 +82,8 @@ function Register() {
   };
 
   return (
+
+  
   <div className="App">  
     <div className="base-container">
       <header>
@@ -82,6 +106,12 @@ function Register() {
             <img src={password} className="icon" />          
             <input type="password" className="form-control" name="passwordconfirmation" id="passwordconfirmation" placeholder="Wachtwoord confirmatie" onChange={event=>setField(event,"confirmpassword")}/>
           </div>
+          <label for="drugs">Choose a drug:</label>
+          <select name="drugs" id="drugs" onChange={event=>{setField(event,"drug")}}>
+            <option value={1}>wiet</option>
+            <option value={2}>coke</option>
+            <option value={3}>alcohol</option>
+          </select>
         </div>
       </div>
       <div className="form__field"> 
@@ -90,6 +120,7 @@ function Register() {
       <a className="link-account" href="login.js">Heb je al een account?</a>
     </div>
   </div>  
+   
     );
 }
 

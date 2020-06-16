@@ -1,10 +1,11 @@
 
 .nav {
-    position: absolute;
+    position: fixed;
     width: 375px;
     height: 78px;
-    top: 829px;
-    overflow: hidden;
+    
+    bottom: 35px;
+    overflow: visible;
 }
 
 .dagboek {
@@ -25,7 +26,6 @@
     top: 14.748px;
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
-
 
 .profiel {
     overflow: visible;
@@ -54,3 +54,4 @@
     left: 0px;
     top: 0px;
 }
+
