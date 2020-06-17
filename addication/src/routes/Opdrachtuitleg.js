@@ -2,6 +2,8 @@ import React from 'react';
 import CurrentLevel from '../components/CurrentLevel';
 import backbutton from "../SVG/back-button.svg";
 import { useHistory } from 'react-router-dom';
+import Register from "../components/navigator";
+
 
 
 function Opdrachtuitleg() {
@@ -36,6 +38,7 @@ function Opdrachtuitleg() {
                 <a href="startopdracht.html" class="startop">START</a>
 			</div>
         </div>
+       <Register /> 
     </div>
     );
 }

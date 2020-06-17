@@ -5,9 +5,11 @@ const UserDispatchContext = React.createContext();
 function userReducer(state, action) {
     switch(action.type){
         case 'setUser': {
+            localStorage.setItem("User", JSON.stringify(action.value));
             return {...state, user: action.value};
         }
         case 'unSetUser':{
+            localStorage.setItem("User", null);
             return {};
         }
         default: {
@@ -17,11 +19,23 @@ function userReducer(state, action) {
 }
 
 function UserProvider({children}){
-    const [state, dispatch] = React.useReducer(userReducer, {});
+    const defaultState = {};
+    
+    let data = localStorage.getItem("User");
+    if(data){
+        try{
+            defaultState.user = JSON.parse(data);
+        }catch(e){
+           alert("pe"); 
+        }
+    }
+    console.log(defaultState);
+    
+    const [state, dispatch] = React.useReducer(userReducer, defaultState);
     return (
     <UserStateContext.Provider value={state}>
         <UserDispatchContext.Provider value={dispatch}>
-                {children}    
+                {children}
         </UserDispatchContext.Provider>
     </UserStateContext.Provider>
     );

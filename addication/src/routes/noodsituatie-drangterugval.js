@@ -32,13 +32,20 @@ function NoodknopDrangterugval() {
           <div class="inhoudopdracht">
             <h2 id="hulp"> Drang terugval </h2>
             <p class="uitleg">
-              Stappen
+            Hey hold on! Keep up the good work...
+            Heb je het gevoel dat je sterk terugvalt? 
+            Hier zijn enkele tips:
+            1. Terugval is zeer normaal
+            2. Doe een opdracht mocht je deze nog niet gedaan hebben
+            3. Contacteer iemand in je contacten om te gamen of te wandelen
+            4. Eet iets
+            5. Contacteer de druglijn
             </p>
           </div>
         </button>
 
         <div class="form__field">
-          <a onClick={() => history.push("/noodknopmain")} class="hulpbtn">
+          <a href="tel:078 15 10 20" class="hulpbtn">
             Bel druglijn
           </a>
         </div>

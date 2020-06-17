@@ -3,6 +3,9 @@ import CurrentLevel from '../components/CurrentLevel';
 import { useHistory } from "react-router-dom";
 import backbutton from "../SVG/back-button.svg";
 import hulp from "../SVG/hulp-icon.svg";
+import Level from "../components/Level";
+import Register from "../components/navigator";
+
 
 
 //import './App.css';
@@ -35,15 +38,6 @@ function Opdrachten() {
      </button>
       </a>
       
-      <a href="medailles-opdracht.html">
-      <button class="dash" id="dagboek"> 
-      <div class="inhoud">
-     
-      <p> MEDAILLES</p>
-          </div>
-     </button>
-      </a> 
-      
       <a onClick={() => history.push("/opdrachthulp")}> 
        <button class="dash" id="noodknop"> 
        <div class="inhoud">
@@ -53,7 +47,7 @@ function Opdrachten() {
      </button>
        </a>
        
-      
+      <Register />
  
    </div>
     

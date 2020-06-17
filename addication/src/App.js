@@ -47,29 +47,17 @@ function App() {
           <Route path="/opdrachtuitleg">
             <Opdrachtuitleg/>
           </Route>
-          <Route path="/diaryread">
+          <Route path="/diaryread/:id">
             <DiaryRead/>
           </Route>
           <Route path="/settings">
               <Settings />
-          </Route>
-          <Route path="/achievements">
-              <Achievements />
-          </Route>
-          <Route path="/achievementsLevel">
-              <AchievementsLevel />
-          </Route>
-          <Route path="/achievementsDairy">
-              <AchievementsDairy />
           </Route>
           <Route path="/NoodknopMain">
               <NoodknopMain />
           </Route>
           <Route path="/noodknopnoodsituatie">
               <Noodknopnoodsituatie />
-          </Route>
-          <Route path="/achievementsMood">
-              <AchievementsMood />
           </Route>
           <Route path="/NoodsituatieDrangterugval">
               <NoodsituatieDrangterugval />

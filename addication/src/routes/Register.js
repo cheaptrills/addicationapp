@@ -117,7 +117,7 @@ function Register() {
       <div className="form__field"> 
         <input type="submit" value="maak account" className="btn" onClick={handleSubmit} />
       </div>
-      <a className="link-account" href="login.js">Heb je al een account?</a>
+      <a className="link-account" onClick={()=>history.push("/login")}>Heb je al een account?</a>
     </div>
   </div>  
    

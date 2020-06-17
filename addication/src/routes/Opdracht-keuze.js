@@ -6,6 +6,9 @@ import gql from 'graphql-tag';
 import {useQuery} from 'react-apollo';
 import CurrentLevel from '../components/CurrentLevel';
 import { useHistory } from 'react-router-dom';
+import Level from "../components/Level";
+import Register from "../components/navigator";
+
 
 const GET_TASK = gql
 `{
@@ -50,6 +53,7 @@ function Opdrachtkeuze() {
           )) 
         }
       </div>
+      <Register />
     </div>
     );
 }

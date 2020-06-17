@@ -17,7 +17,7 @@ function NoodknopHulp() {
     <div>
       <header>
         <div class="start">
-          <a onClick={() => history.push("/opdrachten")}>
+          <a onClick={() => history.push("/noodknopmain")}>
             <img src={backbutton} alt="terugknop" class="terugknop" />
           </a>
         </div>

@@ -32,7 +32,13 @@ function NoodknopBijwerkingen() {
           <div class="inhoudopdracht">
             <h2 id="hulp"> Bijwerkingen </h2>
             <p class="uitleg">
-              vullen
+            Het is volledig normaal mocht je bijwerkingen hebben. <br />
+            Voorbeelden hiervan zijn: <br />
+            - Depressie<br />
+            - Vermoeidheid<br />
+            - Lichte koorts<br />
+            Let er wel op dat deze niet te erg worden. Bij twijfel kan je steeds een arts of de druglijn contacteren. <br />
+            Wil je jouw hartje luchten? Ga dan naar de tab psychologen.<br />
             </p>
           </div>
         </button>

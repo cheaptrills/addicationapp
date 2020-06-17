@@ -6,7 +6,7 @@ import backbutton from "../SVG/back-button.svg";
 import { useUserState } from "../context/UserContext";
 import gql from "graphql-tag";
 import { useQuery } from "react-apollo";
-import { useHistory } from "react-router-dom";
+import { useHistory,useParams } from "react-router-dom";
 
 const GET_DIARY = gql`
   query Diary($userid: ID) {
@@ -18,11 +18,12 @@ const GET_DIARY = gql`
 `;
 
 function DiaryRead() {
+  const {id} = useParams();
   let history = useHistory();
   const user = useUserState();
   const { loading, error, data } = useQuery(GET_DIARY, {
     variables: {
-      userid: user.id,
+      userid: id,
     },
   });
 
