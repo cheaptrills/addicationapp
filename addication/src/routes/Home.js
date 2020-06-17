@@ -1,12 +1,9 @@
 import React from "react";
-//import './App.css';
-//import '.
 import opdrachtenicon from "../SVG/opdrachten-icon.svg";
 import diaryicon from "../SVG/diary-icon.svg";
 import noodknopicon from "../SVG/noodknop-icon.svg";
 import achievementicon from "../SVG/achievement-icon.svg";
 import "../css/stylechloe.css";
-//import './scale.js';
 
 import Level from "../components/Level";
 import Register from "../components/navigator";
@@ -41,19 +38,6 @@ function Home() {
             <div class="inhoud">
               <img src={noodknopicon} alt="opdrachten" class="icons" />
               <p> Noodknop</p>
-            </div>
-          </button>
-        </a>
-        <a onClick={() => history.push("/achievements")}>
-          <button class="dash" id="achievements">
-            <div class="inhoud">
-              <img
-                src={achievementicon}
-                alt="opdrachten"
-                class="icons"
-                id="achieve"
-              />
-              <p> Achievements</p>
             </div>
           </button>
         </a>

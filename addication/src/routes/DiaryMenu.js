@@ -6,6 +6,8 @@ import CurrentLevel from "../components/CurrentLevel";
 import backbutton from "../SVG/back-button.svg";
 import hulp from "../SVG/hulp-icon.svg";
 import { useUserDispatch } from "../context/UserContext";
+import Register from "../components/navigator";
+
 
 function DiaryMenu() {
   const history = useHistory();
@@ -31,13 +33,6 @@ function DiaryMenu() {
             </div>
           </button>
         </a>
-        <a onClick={() => history.push("/moodslider")}>
-          <button class="dash" id="dagboek">
-            <div class="inhoud">
-              <p> MOODSLIDER</p>
-            </div>
-          </button>
-        </a>
         <a onClick={() => history.push("/diary")}>
           <button class="dash" id="dagboek">
             <div class="inhoud">
@@ -54,6 +49,7 @@ function DiaryMenu() {
           </button>
         </a>
       </div>
+      <Register />
     </div>
   );
 }

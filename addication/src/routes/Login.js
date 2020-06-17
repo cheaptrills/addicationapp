@@ -100,7 +100,7 @@ function Login() {
               <input type="submit" value="Login" class="btn" onClick={handleSubmit}></input>
             </div>
           </div>
-          <a className="link-account" onClick={()=>history.push("/register")}>
+          <a className="link-account" onClick={()=>history.push("/")}>
             Heb je nog geen account?
           </a>
         </div>

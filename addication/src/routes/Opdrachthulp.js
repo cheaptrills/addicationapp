@@ -2,6 +2,8 @@ import React from "react";
 import backbutton from "../SVG/back-button.svg";
 import CurrentLevel from "../components/CurrentLevel";
 import { useHistory } from "react-router-dom";
+import Level from "../components/Level";
+import Register from "../components/navigator";
 
 
 //import './App.css';
@@ -29,10 +31,13 @@ function Opdrachthulp() {
           <div class="inhoudopdracht">
             <h2 id="hulp"> Hulp </h2>
             <p class="uitleg">
-              Om een opdracht te kunnen kiezen, tap je gewoon op de buttons! Je
-              moet elke dag 2 verschillende opdrachten uitvoeren. In welke
-              volgorde je ze doet, bepaal je zelf. Je moet deze voltooien om
-              naar een hoger level te gaan. Succes!
+              Net zoals bij alle andere onderdelen klik je op de onderdelen. <br />
+              Bijwerkingen of wil je je voorbereiden op wat komt? <br />
+              Bekijk dan zeker het bijwerkingen onderdeel. <br />
+              Wil je alvast contact opnemen met professionele hulp? <br/>
+              Dat vind je allemaal terug onder "psychologen" <br/>
+              Heb je nood aan een babbel of wil je je contacten bijwerken <br />
+              Check dan zeker de "contact" knop <br />
             </p>
           </div>
         </button>
@@ -43,6 +48,7 @@ function Opdrachthulp() {
           </a>
         </div>
       </div>
+      <Register />
     </div>
   );
 }

@@ -22,52 +22,34 @@ function NoodknopPsy() {
           </a>
         </div>
         <Level />
-        <div class="noodknop-psy-box1">
-          <svg class="noodknop-psy-vierkant">
-            <input type="button" class="noodknop-psy-vierkant" onClick="" />
-          </svg>
-          <div class="noodknop-psy-text1">
-            <span>Geert van reussel</span>
+        <button class="dash1" id="opdrachten">
+          <div class="inhoudopdracht">
+            <h2 id="hulp"> Recommended </h2>
+            <p class="uitleg">
+            Geert van reussel<br />
+            Antwerpsesteenweg 66<br />
+            2800 Mechelen<br />
+            0489/294719<br />
+            <br /><br />
+            gespecialiseerd in:<br />
+            gedragspsychologie<br />
+            </p>
           </div>
-          <div class="noodknop-psy-text2">
-            <span>
-              Antwerpsesteenweg 66
-              <br />
-              2800 Mechelen
-              <br />
-              0489/294719
-            </span>
+        </button>
+        <button class="dash1" id="opdrachten">
+          <div class="inhoudopdracht">
+            <h2 id="hulp">  </h2>
+            <p class="uitleg">
+            Jill van Aartselaar<br />
+            Lange Vlierstraat<br />
+            2018 Mechelen<br />
+            0475/492764<br />
+            <br /><br />
+            gespecialiseerd in:<br />
+            drug misbruik<br />
+            </p>
           </div>
-          <div class="noodknop-psy-text3">
-            <span>
-              gespecialiseerd in: <br />
-              gedragspsychologie
-            </span>
-          </div>
-        </div>
-        <div class="noodknop-psy-box2">
-          <svg class="noodknop-psy-vierkant">
-            <input type="button" class="noodknop-psy-vierkant" onClick="" />
-          </svg>
-          <div class="noodknop-psy-text1">
-            <span>Geert van reussel</span>
-          </div>
-          <div class="noodknop-psy-text2">
-            <span>
-              Antwerpsesteenweg 66
-              <br />
-              2800 Mechelen
-              <br />
-              0489/294719
-            </span>
-          </div>
-          <div class="noodknop-psy-text3">
-            <span>
-              gespecialiseerd in: <br />
-              gedragspsychologie
-            </span>
-          </div>
-        </div>
+        </button>
 
         <Register />
       </div>

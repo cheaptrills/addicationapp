@@ -51,7 +51,7 @@ function NoodknopNoodsituatie() {
         <br />
         <br />
         <br />
-        <a onClick={() => history.push("/noodknoppsychologen")}>
+        <a href="tel:112">
           <button class="dash" id="noodknop">
             <div class="inhoud">
               <p> Ambulance </p>

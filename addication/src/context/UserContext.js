@@ -21,14 +21,15 @@ function userReducer(state, action) {
 function UserProvider({children}){
     const defaultState = {};
     
-    let data = localStorage.getItem("user");
+    let data = localStorage.getItem("User");
     if(data){
         try{
-            defaultState = JSON.parse(data);
+            defaultState.user = JSON.parse(data);
         }catch(e){
-            
+           alert("pe"); 
         }
     }
+    console.log(defaultState);
     
     const [state, dispatch] = React.useReducer(userReducer, defaultState);
     return (

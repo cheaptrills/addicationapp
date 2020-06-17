@@ -3,6 +3,8 @@ import CurrentLevel from "../components/CurrentLevel";
 import backbutton from "../SVG/back-button.svg";
 import { useHistory } from "react-router-dom";
 import { useUserState } from "../context/UserContext";
+import Register from "../components/navigator";
+
 
 import gql from "graphql-tag";
 import { useQuery } from "react-apollo";
@@ -11,6 +13,7 @@ const GET_DIARIES = gql`
   query Diaries($userid: String) {
     diaries(userID: $userid) {
       title
+      id
     }
   }
 `;
@@ -41,7 +44,7 @@ function Diary() {
       </header>
       <div class="maindash">
         {data.diaries.map((diary) => (
-          <a href="/diaryread">
+          <a href={"/diaryread/"+diary.id}>
             <button class="dash" id="opdrachten">
               <div class="inhoud">
                 <p class="dag">{diary.title}</p>
@@ -50,6 +53,7 @@ function Diary() {
           </a>
         ))}
       </div>
+      <Register />
     </div>
   );
 }

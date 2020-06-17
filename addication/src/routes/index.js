@@ -5,10 +5,6 @@ import Home from "./Home";
 import Profile from "./Profile";
 import DiaryEntry from "./DiaryEntry";
 import Settings from "./settings";
-import Achievements from "./achievements";
-import AchievementsLevel from "./achievements-level";
-import AchievementsMood from "./achievements-mood";
-import AchievementsDairy from "./achievements-dairy";
 
 import NoodknopMain from "./noodknop-main";
 import NoodsituatieBijwerkingen from "./noodsituatie-bijwerkingen";
@@ -33,13 +29,9 @@ export {
   Diary,
   Home,
   Profile,
-  Achievements,
   Settings,
-  AchievementsLevel,
   Opdrachtkeuze,
   DiaryMenu,
-  AchievementsMood,
-  AchievementsDairy,
   NoodknopMain,
   NoodsituatieDrangterugval,
   DiaryRead,
