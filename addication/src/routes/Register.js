@@ -63,6 +63,7 @@ function Register() {
       errors.push("passwords don't match");
     }
 
+    fields.drug = parseInt(fields.drug);
     if(errors.length === 0){
       signup({
         variables: fields
