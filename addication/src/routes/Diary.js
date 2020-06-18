@@ -24,7 +24,7 @@ function Diary() {
 
   const { loading, error, data } = useQuery(GET_DIARIES, {
     variables: {
-      userid: user.id,
+      userid: user.userid,
     },
   });
 

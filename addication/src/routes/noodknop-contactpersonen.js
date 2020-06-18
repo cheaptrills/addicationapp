@@ -30,16 +30,7 @@ function NoodknopContactpersonen() {
           </div>
         </div>
 
-        <div class="noodknop-contact-button2">
-          <div class="noodknop-babbel-vierkant">
-            <input
-              type="button"
-              value="Tom"
-              class="noodknop-babbel-vierkant"
-              onClick=""
-            />
-          </div>
-        </div>
+        
 
         <img id="plus1" src={Plus1}></img>
 
